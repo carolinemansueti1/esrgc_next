@@ -6,7 +6,7 @@ import MapContainer from './MapContainer';
 const assetPrefix = process.env.ASSET_PREFIX;
 const salisbury =  `${assetPrefix}/static/images/salisbury.png`;
 const tricountyLogo =  `${assetPrefix}/static/images/tricountyLogo.png`;
-const msrclogo =  `${assetPrefix}/static/images/msrgclogo.png`;
+const msrclogo =  `${assetPrefix}/static/images/msrgc.png`;
 
 const footer = () => (
     <div>

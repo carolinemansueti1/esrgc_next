@@ -9,7 +9,7 @@ const DataHolder = (props) => (
             <div className="ui fluid card">
                 <Card.Content>
                     <Image size="large"
-                        src={`${assetPrefix}/../static/images/${props.image}`}
+                        src={`${assetPrefix}/static/images/${props.image}`}
                         title={props.title}
                         centered
                     />

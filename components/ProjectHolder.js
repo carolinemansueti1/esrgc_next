@@ -10,7 +10,7 @@ export default (props) => {
                 <div className="ui fluid card" key={props.title}>
                     <Card.Content>
                     <Image size="large"
-                        src={`../static/images/${props.image}`}
+                        src={`${assetPrefix}/static/images/${props.image}`}
                         title={props.title}
                     />
                     </Card.Content>
