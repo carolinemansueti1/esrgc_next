@@ -6,7 +6,7 @@ import MapContainer from './MapContainer';
 const assetPrefix = process.env.ASSET_PREFIX;
 const salisbury =  `${assetPrefix}/static/images/salisbury.png`;
 const tricountyLogo =  `${assetPrefix}/static/images/tricountyLogo.png`;
-const msrclogo =  `${assetPrefix}/static/images/msrgc.png`;
+const msrc = `${assetPrefix}/static/images/msrc.png`;
 
 const footer = () => (
     <div>
@@ -37,7 +37,7 @@ const footer = () => (
                         
                         <Link href={'http://www.midshore.org/index'}>
                           <a>
-                            <img className='ui small image' src={msrclogo} />
+                            <img className='ui small image' src={msrc} />
                           </a>
                         </Link>
                         

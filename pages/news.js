@@ -16,7 +16,6 @@ const news = () => (
             }`}
         </style>
     </Layout>
-    
 )
 
 export default news;
