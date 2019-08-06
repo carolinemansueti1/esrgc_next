@@ -10,6 +10,7 @@ const logo =  `${assetPrefix}/static/images/ESRGC_Logo_Gold_no_text.png`;
 const data = `${assetPrefix}/static/images/assateague2.png`;
 const services = `${assetPrefix}/static/images/panelinstall.png`;
 const about = `${assetPrefix}/static/images/network.png`;
+const logo_svg = `${assetPrefix}/static/images/logoNoCaption.svg`;
 
 const Home = () => (
   <Layout>
@@ -18,7 +19,7 @@ const Home = () => (
         <img src={banner} />
       </div>
       <div id='logo'>
-        <img src={logo} />
+        <img src={logo_svg} />
       </div>
     </div>
 
