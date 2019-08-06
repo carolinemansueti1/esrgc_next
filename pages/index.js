@@ -134,9 +134,11 @@ const Home = () => (
         }
 
         #logo img {
+          max-width: 20vw;
+          max-height: 15vh;
           position: absolute;
           top: 50%;
-          left: 45%;
+          left: 42%;
 
 
             -webkit-animation: fadein 2s; /* Safari, Chrome and Opera > 12.1 */
