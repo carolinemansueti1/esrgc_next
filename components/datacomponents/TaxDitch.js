@@ -4,7 +4,7 @@ import { Card, Image } from 'semantic-ui-react';
 const assetPrefix = process.env.ASSET_PREFIX;
 
 const TaxDitch = (props) => (
-    <Link href='../../dataholder/taxditch' as={`${assetPrefix}/../../dataholder/taxditch`}>
+    <Link href='../../dataholder/taxditch' as={`${assetPrefix}/dataholder/taxditch`}>
         <a>
             <div className="ui fluid card">
                 <Card.Content>
