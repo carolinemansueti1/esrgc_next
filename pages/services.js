@@ -48,7 +48,7 @@ const ServiceList = (props) => (
 
                             <div className='ui four wide column'>
                                 <div className="ui right aligned basic segment">
-                                    <img className="ui center aligned large image" src={eva1l} />
+                                    <img className="ui center aligned large image" src={eval1} />
                                 </div>
                             </div>
 
