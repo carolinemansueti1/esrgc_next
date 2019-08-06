@@ -7,4 +7,4 @@ Current Issues/Points to be addressed:
   -maybe make the display cards smaller and downsize their images?
   -make all text bellow hero/banner images inline with the image border
   -on the Contact page, I will change the clipbard contact button to a mailto link
-  -meed to find/create an svg image for the banner load in image on the homepage
+  -need to find/create an svg image for the banner load in image on the homepage
