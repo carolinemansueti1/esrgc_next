@@ -5,6 +5,7 @@ import Footer from '../components/Footer';
 import { Image, List } from 'semantic-ui-react';
 import MapContainer from '../components/MapContainer';
 
+const assetPrefix = process.env.ASSET_PREFIX;
 const msgic = `${assetPrefix}/static/images/msgic_logo.png`;
 const twitter = `${assetPrefix}/static/images/twitter.png`;
 const facebook = `${assetPrefix}/static/images/facebook.png`;
