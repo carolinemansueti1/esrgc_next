@@ -41,22 +41,55 @@ const hazus = (props) => {
                     <h4>HAZUS-MH Run Files</h4>
                 </div>
 
-                <div className="ui row">
-                    <div className="ui three wide column">
+                <div className="ui six column row">
+                    <div className="ui column">
                         <List>
                             <List.Item>
-                                <Link href={'../../static/data/hazus/Baltimore_City.zip'}>
+                                <Link href={'../../static/data/hazus/Allegany.zip'} as={`${assetPrefix}/static/data/hazus/Allegany.zip`}>
                                     <a>
                                         <button className='ui labeled icon teal button'>
                                             <i className='ui download icon' />
-                                            Baltimore City (38 MB) 
+                                            Allegany (125.1 MB) 
                                         </button>
                                     </a>
                                 </Link>
                             </List.Item>
 
                             <List.Item>
-                                <Link href={'../../static/data/hazus/Calvert.zip'}>
+                                <Link href={'../../static/data/hazus/AnneArundel.zip'} as={`${assetPrefix}/static/data/hazus/AnneArundel.zip`}>
+                                    <a>
+                                        <button className='ui labeled icon teal button'>
+                                            <i className='ui download icon' />
+                                            Anne Arundel (93.1 MB) 
+                                        </button>
+                                    </a>
+                                </Link>
+                            </List.Item>
+
+                            <List.Item>
+                                <Link href={'../../static/data/hazus/Baltimore.zip'} as={`${assetPrefix}/static/data/hazus/Baltimore.zip`}>
+                                    <a>
+                                        <button className='ui labeled icon teal button'>
+                                            <i className='ui download icon' />
+                                            Baltimore City (106 MB) 
+                                        </button>
+                                    </a>
+                                </Link>
+                            </List.Item>
+
+                            <List.Item>
+                                <Link href={'../../static/data/hazus/Baltimore_City.zip'} as={`${assetPrefix}/static/data/hazus/Baltimore_City.zip`}>
+                                    <a>
+                                        <button className='ui labeled icon teal button'>
+                                            <i className='ui download icon' />
+                                            Baltimore City (39 MB) 
+                                        </button>
+                                    </a>
+                                </Link>
+                            </List.Item>
+
+                            <List.Item>
+                                <Link href={'../../static/data/hazus/Calvert.zip'} as={`${assetPrefix}/static/data/hazus/Calvert.zip`}>
                                     <a>
                                         <button className='ui labeled icon teal button'>
                                             <i className='ui download icon' />
@@ -67,7 +100,7 @@ const hazus = (props) => {
                             </List.Item>
 
                             <List.Item>
-                                <Link href={'../../static/data/hazus/Caroline.zip'}>
+                                <Link href={'../../static/data/hazus/Caroline.zip'} as={`${assetPrefix}/static/data/hazus/Caroline.zip`}>
                                     <a>
                                         <button className='ui labeled icon teal button'>
                                             <i className='ui download icon' />
@@ -76,9 +109,13 @@ const hazus = (props) => {
                                     </a>
                                 </Link>   
                             </List.Item>
+                        </List>
+                    </div>
 
+                    <div className="ui wide column">
+                        <List>
                             <List.Item>
-                                <Link href={'../../static/data/hazus/Carroll_ditch.zip'}>
+                                <Link href={'../../static/data/hazus/Carroll.zip'} as={`${assetPrefix}/static/data/hazus/Carroll.zip`}>
                                     <a>
                                         <button className='ui labeled icon teal button'>
                                             <i className='ui download icon' />
@@ -89,7 +126,7 @@ const hazus = (props) => {
                             </List.Item>
 
                             <List.Item>
-                                <Link href={'../../static/data/hazus/Cecil.zip'}>
+                                <Link href={'../../static/data/hazus/Cecil.zip'} as={`${assetPrefix}/static/data/hazus/Cecil.zip`}>
                                     <a>
                                         <button className='ui labeled icon teal button'>
                                             <i className='ui download icon' />
@@ -100,7 +137,7 @@ const hazus = (props) => {
                             </List.Item>
 
                             <List.Item>
-                                <Link href={'../../static/data/hazus/Charles.zip'}>
+                                <Link href={'../../static/data/hazus/Charles.zip'} as={`${assetPrefix}/static/data/hazus/Charles.zip`}>
                                     <a>
                                         <button className='ui labeled icon teal button'>
                                             <i className='ui download icon' />
@@ -111,7 +148,7 @@ const hazus = (props) => {
                             </List.Item>
 
                             <List.Item>
-                                <Link href={'../../static/data/hazus/Dorchester.zip'}>
+                                <Link href={'../../static/data/hazus/Dorchester.zip'} as={`${assetPrefix}/static/data/hazus/Dorchester.zip`}>
                                     <a>
                                         <button className='ui labeled icon teal button'>
                                             <i className='ui download icon' />
@@ -120,13 +157,10 @@ const hazus = (props) => {
                                     </a>
                                 </Link>   
                             </List.Item>
-                        </List>
-                    </div>
 
-                    <div className="ui three wide column">
-                        <List>
-                        <List.Item>
-                                <Link href={'../../static/data/hazus/Frederick.zip'}>
+
+                            <List.Item>
+                                <Link href={'../../static/data/hazus/Frederick.zip'} as={`${assetPrefix}/static/data/hazus/Frederick.zip`}>
                                     <a>
                                         <button className='ui labeled icon teal button'>
                                             <i className='ui download icon' />
@@ -137,19 +171,22 @@ const hazus = (props) => {
                             </List.Item>
 
                             <List.Item>
-                                <Link href={'../../static/data/hazus/Garrett.zip'}>
+                                <Link href={'../../static/data/hazus/Garrett.zip'} as={`${assetPrefix}/static/data/hazus/Garrett.zip`}>
                                     <a>
                                         <button className='ui labeled icon teal button'>
                                             <i className='ui download icon' />
                                             Garrett County (127 MB)
-
                                         </button>
                                     </a>
                                 </Link>   
                             </List.Item>
+                        </List>
+                    </div>
 
-                            <List.Item>
-                                <Link href={'../../static/data/hazus/Harford.zip'}>
+                    <div className="ui wide column">
+                        <List>
+                        <List.Item>
+                                <Link href={'../../static/data/hazus/Harford.zip'}as={`${assetPrefix}/static/data/hazus/Harford.zip`}>
                                     <a>
                                         <button className='ui labeled icon teal button'>
                                             <i className='ui download icon' />
@@ -160,7 +197,7 @@ const hazus = (props) => {
                             </List.Item>
 
                             <List.Item>
-                                <Link href={'../../static/data/hazus/Howard.zip'}>
+                                <Link href={'../../static/data/hazus/Howard.zip'} as={`${assetPrefix}/static/data/hazus/Howard.zip`}>
                                     <a>
                                         <button className='ui labeled icon teal button'>
                                             <i className='ui download icon' />
@@ -171,7 +208,7 @@ const hazus = (props) => {
                             </List.Item>
 
                             <List.Item>
-                                <Link href={'../../static/data/Hazus/Kent.zip'}>
+                                <Link href={'../../static/data/Hazus/Kent.zip'} as={`${assetPrefix}/static/data/hazus/Kent.zip`}>
                                     <a>
                                         <button className='ui labeled icon teal button'>
                                             <i className='ui download icon' />
@@ -182,7 +219,7 @@ const hazus = (props) => {
                             </List.Item>
 
                             <List.Item>
-                                <Link href={'../../static/data/hazus/Montgomery.zip'}>
+                                <Link href={'../../static/data/hazus/Montgomery.zip'} as={`${assetPrefix}/static/data/hazus/Montgomery.zip`}>
                                     <a>
                                         <button className='ui labeled icon teal button'>
                                             <i className='ui download icon' />
@@ -193,7 +230,7 @@ const hazus = (props) => {
                             </List.Item>
 
                             <List.Item>
-                                <Link href={'../../static/data/hazus/Prince_Georges.zip'}>
+                                <Link href={'../../static/data/hazus/Prince_Georges.zip'} as={`${assetPrefix}/static/data/hazus/Prince_Georges.zip`}>
                                     <a>
                                         <button className='ui labeled icon teal button'>
                                             <i className='ui download icon' />
@@ -202,14 +239,9 @@ const hazus = (props) => {
                                     </a>
                                 </Link>   
                             </List.Item>
-
-                        </List>
-                    </div>
-
-                    <div className="ui three wide column">
-                        <List>
-                        <List.Item>
-                                <Link href={'../../static/data/hazus/QueenAnnes.zip'}>
+                            
+                            <List.Item>
+                                <Link href={'../../static/data/hazus/QueenAnnes.zip'} as={`${assetPrefix}/static/data/hazus/QueenAnnes.zip`}>
                                     <a>
                                         <button className='ui labeled icon teal button'>
                                             <i className='ui download icon' />
@@ -218,9 +250,14 @@ const hazus = (props) => {
                                     </a>
                                 </Link>   
                             </List.Item>
+                
+                        </List>
+                    </div>
 
+                    <div className='ui wide column'>
+                        <List>
                             <List.Item>
-                                <Link href={'../../static/data/hazus/Somerset.zip'}>
+                                <Link href={'../../static/data/hazus/Somerset.zip'} as={`${assetPrefix}/static/data/hazus/Somerset.zip`}>
                                     <a>
                                         <button className='ui labeled icon teal button'>
                                             <i className='ui download icon' />
@@ -231,7 +268,7 @@ const hazus = (props) => {
                             </List.Item>
 
                             <List.Item>
-                                <Link href={'../../static/data/hazus/StMarys.zip'}>
+                                <Link href={'../../static/data/hazus/StMarys.zip'} as={`${assetPrefix}/static/data/hazus/StMarys.zip`}>
                                     <a>
                                         <button className='ui labeled icon teal button'>
                                             <i className='ui download icon' />
@@ -242,7 +279,7 @@ const hazus = (props) => {
                             </List.Item>
 
                             <List.Item>
-                                <Link href={'../../static/data/hazus/Talbot.zip'}>
+                                <Link href={'../../static/data/hazus/Talbot.zip'} as={`${assetPrefix}/static/data/hazus/Talbot.zip`}>
                                     <a>
                                         <button className='ui labeled icon teal button'>
                                             <i className='ui download icon' />
@@ -253,7 +290,7 @@ const hazus = (props) => {
                             </List.Item>
 
                             <List.Item>
-                                <Link href={'../../static/data/hazus/Washington.zip'}>
+                                <Link href={'../../static/data/hazus/Washington.zip'} as={`${assetPrefix}/static/data/hazus/Washington.zip`}>
                                     <a>
                                         <button className='ui labeled icon teal button'>
                                             <i className='ui download icon' />
@@ -264,7 +301,7 @@ const hazus = (props) => {
                             </List.Item>
 
                             <List.Item>
-                                <Link href={'../../static/data/hazus/Wicomico.zip'}>
+                                <Link href={'../../static/data/hazus/Wicomico.zip'} as={`${assetPrefix}/static/data/hazus/Wicomico.zip`}>
                                     <a>
                                         <button className='ui labeled icon teal button'>
                                             <i className='ui download icon' />
@@ -276,7 +313,7 @@ const hazus = (props) => {
                             </List.Item>
 
                             <List.Item>
-                                <Link href={'../../static/data/hazus/Worcester.zip'}>
+                                <Link href={'../../static/data/hazus/Worcester.zip'} as={`${assetPrefix}/static/data/hazus/Worcester.zip`}>
                                     <a>
                                         <button className='ui labeled icon teal button'>
                                             <i className='ui download icon' />
@@ -296,7 +333,7 @@ const hazus = (props) => {
                         
                         <List>
                             <List.Item>
-                                <Link href={'../../static/data/tditch/choptank_ditch.zip'}>
+                                <Link href={'../../static/data/hazus/appendix_a.pdf'} as={`${assetPrefix}/static/data/hazus/appendix_a.pdf`}>
                                     <a>
                                         <button className='ui labeled icon teal button'>
                                             <i className='ui download icon' />
@@ -307,7 +344,7 @@ const hazus = (props) => {
                             </List.Item>
 
                             <List.Item>
-                                <Link href={'../../static/data/tditch/choptank_ditch.zip'}>
+                                <Link href={'../../static/data/hazus/appendix_b.pdf'} as={`${assetPrefix}/static/data/hazus/appendix_b.pdf`}>
                                     <a>
                                         <button className='ui labeled icon teal button'>
                                             <i className='ui download icon' />
@@ -318,7 +355,7 @@ const hazus = (props) => {
                             </List.Item>
 
                             <List.Item>
-                                <Link href={'../../static/data/tditch/choptank_ditch.zip'}>
+                                <Link href={'../../static/data/hazus/appendix_c.pdf'} as={`${assetPrefix}/static/data/hazus/appendix_c.pdf`}>
                                     <a>
                                         <button className='ui labeled icon teal button'>
                                             <i className='ui download icon' />

@@ -41,7 +41,7 @@ const taxditch = (props) => {
                         <h4>Unrectified Data </h4>
                         <List>
                             <List.Item>
-                                <Link href={'../../static/data/jsmith/unrect/john_smith_virginia_1612.zip'}  as={`${assetPrefix}/../../static/data/jsmith/unrect/john_smith_virginia_1612.zip`}>
+                                <Link href={'../../static/data/jsmith/unrect/john_smith_virginia_1612.zip'}  as={`${assetPrefix}/static/data/jsmith/unrect/john_smith_virginia_1612.zip`}>
                                     <a>
                                         <button className='ui labeled icon blue button'>
                                             <i className='ui download icon' />
@@ -52,7 +52,7 @@ const taxditch = (props) => {
                             </List.Item>
 
                             <List.Item>
-                                <Link href={'../../static/data/jsmith/unrect/all_coastline_exp.zip'}>
+                                <Link href={'../../static/data/jsmith/unrect/all_coastline_exp.zip'} as={`${assetPrefix}/static/data/jsmith/unrect/all_coastline_exp.zip`}>
                                     <a>
                                         <button className='ui labeled icon blue button'>
                                             <i className='ui download icon' />
@@ -63,7 +63,7 @@ const taxditch = (props) => {
                             </List.Item>
 
                             <List.Item>
-                                <Link href={'../../static/datajsmith/unrect/all_towns_exp.zip'}>
+                                <Link href={'../../static/datajsmith/unrect/all_towns_exp.zip'} as={`${assetPrefix}/static/data/jsmith/unrect/all_towns_exp.zip`}>
                                     <a>
                                         <button className='ui labeled icon blue button'>
                                             <i className='ui download icon' />
@@ -79,7 +79,7 @@ const taxditch = (props) => {
                         <h4>Affine Rectified Data</h4>
                         <List>
                             <List.Item>
-                                <Link href={'../../static/data/jsmith/affine/js_map_rectify_correctscale_and_orient.zip'}>
+                                <Link href={'../../static/data/jsmith/affine/js_map_rectify_correctscale_and_orient.zip'} as={`${assetPrefix}/static/data/jsmith/affine/js_map_rectify_correctscale_and_orient.zip`}>
                                     <a>
                                         <button className='ui labeled icon blue button'>
                                             <i className='ui download icon' />
@@ -90,7 +90,7 @@ const taxditch = (props) => {
                             </List.Item>
 
                             <List.Item>
-                                <Link href={'../../static/data/jsmith/affine/all_coastline_affine.zip'}>
+                                <Link href={'../../static/data/jsmith/affine/all_coastline_affine.zip'} as={`${assetPrefix}/static/data/jsmith/affine/all_coastline_affine.zip`}>
                                     <a>
                                         <button className='ui labeled icon blue button'>
                                             <i className='ui download icon' />
@@ -101,7 +101,7 @@ const taxditch = (props) => {
                             </List.Item>
 
                             <List.Item>
-                                <Link href={'../../static/data/jsmith/affine/all_towns_affine.zip'}>
+                                <Link href={'../../static/data/jsmith/affine/all_towns_affine.zip'} as={`${assetPrefix}/static/data/jsmith/affine/all_towns_affine.zip`}>
                                     <a>
                                         <button className='ui labeled icon blue button'>
                                             <i className='ui download icon' />
