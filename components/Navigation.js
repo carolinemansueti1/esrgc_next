@@ -2,20 +2,22 @@ import Link from 'next/link';
 import React from 'react';
 
 class Navigation extends React.Component {
-    
     render () {
+
+        const assetPrefix = process.env.ASSET_PREFIX;
+
         return (
             <div>
                 <div className="ui fixed massive borderless menu" id="nav1">
                     <div className="ui item">
-                        <Link href="/">
+                        <Link href="/" as={`${assetPrefix}/`}>
                             <a className="nav-link">
                                 <img className='ui tiny image' src={require('../static/images/ESRGC_Logo_Gold_no_text.png')}/>
                             </a>
                         </Link>
                     </div>
                     <div className="ui item">
-                        <Link href="/">
+                        <Link href="/" as={`${assetPrefix}/`}>
                             <a className="nav-link">
                             Eastern Shore Regional GIS Cooperative
                             </a>
@@ -26,22 +28,22 @@ class Navigation extends React.Component {
        
                     <ul className="right menu" id="right">
                         <div className="ui item">
-                            <Link href="/about"><a className="nav-link">About</a></Link>
+                            <Link href="/about" as={`${assetPrefix}/about`}><a className="nav-link">About</a></Link>
                         </div>
                         <div className="ui item">
-                            <Link href="/services"><a className="nav-link">Services</a></Link>
+                            <Link href="/services" as={`${assetPrefix}/services`}><a className="nav-link">Services</a></Link>
                         </div>
                         <div className="ui item">
-                            <Link href="/work"><a className="nav-link">Our Work</a></Link>
+                            <Link href="/work"as={`${assetPrefix}/work`}><a className="nav-link">Our Work</a></Link>
                         </div>
                         <div className="ui item">
-                            <Link href="/data"><a className="nav-link">Data</a></Link>
+                            <Link href="/data" as={`${assetPrefix}/data`}><a className="nav-link">Data</a></Link>
                         </div>
                         <div className="ui item">
-                            <Link href="/news"><a className="nav-link">News</a></Link>
+                            <Link href="/news" as={`${assetPrefix}/news`}><a className="nav-link">News</a></Link>
                         </div>
                         <div className="ui item">
-                            <Link href="/contact"><a className="nav-link">Contact Us</a></Link>
+                            <Link href="/contact" as={`${assetPrefix}/contact`}><a className="nav-link">Contact Us</a></Link>
                         </div>
                     </ul>
                 </div>

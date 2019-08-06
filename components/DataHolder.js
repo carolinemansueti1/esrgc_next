@@ -2,7 +2,7 @@ import Link from 'next/link';
 import { Card, Image } from 'semantic-ui-react';
 
 const DataHolder = (props) => (
-    <Link href={`../../dataholder/${props.pathname}`}>
+    <Link href={`../../dataholder/${props.pathname}`} as={`${assetPrefix}/../../dataholder/${props.pathname}`}>
         <a>
             <div className="ui fluid card">
                 <Card.Content>

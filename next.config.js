@@ -1,6 +1,10 @@
+const prod = process.env.NODE_ENV === 'production'
+const assetPrefix = prod ? '/esrgc-newsite' : '';
+
 const withCSS = require('@zeit/next-css')
 
 module.exports = withCSS({
+  assetPrefix: assetPrefix,
   target: 'serverless',
   webpack (config) {
     config.module.rules.push({

@@ -4,7 +4,7 @@ import { Card, Image } from 'semantic-ui-react';
 export default (props) => {
     
     return (
-            <Link href={{ pathname: '/projectholder', query: { id: props.id } }}>
+            <Link href={{ pathname: '/projectholder', query: { id: props.id } }} as={`${assetPrefix}/projectholder`}>
                 <div className="ui fluid card" key={props.title}>
                     <Card.Content>
                     <Image size="large"

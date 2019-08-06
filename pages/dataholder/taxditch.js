@@ -35,7 +35,7 @@ const taxditch = (props) => {
                         <h4>Tax Ditches</h4>
                         <List>
                             <List.Item>
-                                <Link href={'../../static/data/tditch/choptank_ditch.zip'}>
+                                <Link href={'../../static/data/tditch/choptank_ditch.zip'} as={`${assetPrefix}/../../static/data/tditch/choptank_ditch.zip`}>
                                     <a>
                                         <button className='ui labeled icon teal button'>
                                             <i className='ui download icon' />
@@ -46,7 +46,7 @@ const taxditch = (props) => {
                             </List.Item>
 
                             <List.Item>
-                                <Link href={'../../static/data/tditch/coastalbays_ditch.zip'}>
+                                <Link href={'../../static/data/tditch/coastalbays_ditch.zip'} as={`${assetPrefix}/../../static/data/tditch/coastalbays_ditch.zip`}>
                                     <a>
                                         <button className='ui labeled icon teal button'>
                                             <i className='ui download icon' />
@@ -57,7 +57,7 @@ const taxditch = (props) => {
                             </List.Item>
 
                             <List.Item>
-                                <Link href={'../../static/data/tditch/manokin_ditch.zip'}>
+                                <Link href={'../../static/data/tditch/manokin_ditch.zip'} as={`${assetPrefix}/../../static/data/tditch/manokin_ditch.zip`}>
                                     <a>
                                         <button className='ui labeled icon teal button'>
                                             <i className='ui download icon' />
@@ -68,7 +68,7 @@ const taxditch = (props) => {
                             </List.Item>
 
                             <List.Item>
-                                <Link href={'../../static/data/tditch/nanticoke_ditch.zip'}>
+                                <Link href={'../../static/data/tditch/nanticoke_ditch.zip'} as={`${assetPrefix}/../../static/data/tditch/nanticoke_ditch.zip`}>
                                     <a>
                                         <button className='ui labeled icon teal button'>
                                             <i className='ui download icon' />
@@ -79,7 +79,7 @@ const taxditch = (props) => {
                             </List.Item>
 
                             <List.Item>
-                                <Link href={'../../static/data/tditch/pocomoke_ditch.zip'}>
+                                <Link href={'../../static/data/tditch/pocomoke_ditch.zip'} as={`${assetPrefix}/../../static/data/tditch/pocomoke_ditch.zip`}>
                                     <a>
                                         <button className='ui labeled icon teal button'>
                                             <i className='ui download icon' />
@@ -90,7 +90,7 @@ const taxditch = (props) => {
                             </List.Item>
 
                             <List.Item>
-                                <Link href={'../../static/data/tditch/wicomico_ditch.zip'}>
+                                <Link href={'../../static/data/tditch/wicomico_ditch.zip'} as={`${assetPrefix}/../../static/data/tditch/wicomico_ditch.zip`}>
                                     <a>
                                         <button className='ui labeled icon teal button'>
                                             <i className='ui download icon' />
@@ -107,7 +107,7 @@ const taxditch = (props) => {
                         <h4>PDA (Public Drainage Association)</h4>
                         <List>
                             <List.Item>
-                                <Link href={'../../static/data/tditch/choptank_pda.zip'}>
+                                <Link href={'../../static/data/tditch/choptank_pda.zip'} as={`${assetPrefix}/../../static/data/tditch/choptank_pda.zip`}>
                                     <a>
                                         <button className='ui labeled icon teal button'>
                                             <i className='ui download icon' />
@@ -118,7 +118,7 @@ const taxditch = (props) => {
                             </List.Item>
 
                             <List.Item>
-                                <Link href={'../../static/data/tditch/coastalbays_pda.zip'}>
+                                <Link href={'../../static/data/tditch/coastalbays_pda.zip'} as={`${assetPrefix}/../../static/data/tditch/coastalbays_pda.zip`}>
                                     <a>
                                         <button className='ui labeled icon teal button'>
                                             <i className='ui download icon' />
@@ -129,7 +129,7 @@ const taxditch = (props) => {
                             </List.Item>
 
                             <List.Item>
-                                <Link href={'../../static/data/tditch/manokin_pda.zip'}>
+                                <Link href={'../../static/data/tditch/manokin_pda.zip'} as={`${assetPrefix}/../../static/data/tditch/manokin_pda.zip`}>
                                     <a>
                                         <button className='ui labeled icon teal button'>
                                             <i className='ui download icon' />
@@ -140,7 +140,7 @@ const taxditch = (props) => {
                             </List.Item>
 
                             <List.Item>
-                                <Link href={'../../static/data/tditch/nanticoke_pda.zip'}>
+                                <Link href={'../../static/data/tditch/nanticoke_pda.zip'} as={`${assetPrefix}/../../static/data/tditch/nanticoke_pda.zip`}>
                                     <a>
                                         <button className='ui labeled icon teal button'>
                                             <i className='ui download icon' />
@@ -151,7 +151,7 @@ const taxditch = (props) => {
                             </List.Item>
 
                             <List.Item>
-                                <Link href={'../../static/data/tditch/pocomoke_pda.zip'}>
+                                <Link href={'../../static/data/tditch/pocomoke_pda.zip'} as={`${assetPrefix}/../../static/data/tditch/pocomoke_pda.zip`}>
                                     <a>
                                         <button className='ui labeled icon teal button'>
                                             <i className='ui download icon' />
@@ -162,7 +162,7 @@ const taxditch = (props) => {
                             </List.Item>   
 
                             <List.Item>
-                                <Link href={'../../static/data/tditch/wicomico_pda.zip'}>
+                                <Link href={'../../static/data/tditch/wicomico_pda.zip'} as={`${assetPrefix}/../../static/data/tditch/wicomico_pda.zip`}>
                                     <a>
                                         <button className='ui labeled icon teal button'>
                                             <i className='ui download icon' />

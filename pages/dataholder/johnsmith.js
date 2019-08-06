@@ -36,7 +36,7 @@ const taxditch = (props) => {
                         <h4>Unrectified Data </h4>
                         <List>
                             <List.Item>
-                                <Link href={'../../static/data/jsmith/unrect/john_smith_virginia_1612.zip'}>
+                                <Link href={'../../static/data/jsmith/unrect/john_smith_virginia_1612.zip'}  as={`${assetPrefix}/../../static/data/jsmith/unrect/john_smith_virginia_1612.zip`}>
                                     <a>
                                         <button className='ui labeled icon blue button'>
                                             <i className='ui download icon' />
