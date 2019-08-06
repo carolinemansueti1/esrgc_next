@@ -5,7 +5,7 @@ import Footer from '../components/Footer';
 
 const assetPrefix = process.env.ASSET_PREFIX;
 const tripod = `${assetPrefix}/static/images/tripod.png`;
-const eval = `${assetPrefix}/static/images/eval.png`;
+const eval1 = `${assetPrefix}/static/images/eval.png`;
 const cartographic = `${assetPrefix}/static/images/cartographic.png`;
 const drone = `${assetPrefix}/static/images/drone.png`;
 const compass = `${assetPrefix}/static/images/compass.png`;
@@ -48,7 +48,7 @@ const ServiceList = (props) => (
 
                             <div className='ui four wide column'>
                                 <div className="ui right aligned basic segment">
-                                    <img className="ui center aligned large image" src={eval} />
+                                    <img className="ui center aligned large image" src={eva1l} />
                                 </div>
                             </div>
 
