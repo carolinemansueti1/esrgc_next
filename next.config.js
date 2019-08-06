@@ -18,7 +18,12 @@ module.exports = withCSS({
           name: '[name].[ext]'
         }
       }
-    })
+    });
+    config.plugins.push(
+      new webpack.DefinePlugin({
+        'process.env.ASSET_PREFIX': JSON.stringify(assetPrefix)
+      }),
+    )
     return config
   }
 })
