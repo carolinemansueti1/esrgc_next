@@ -1,6 +1,8 @@
 import Link from 'next/link';
 import { Card, Image } from 'semantic-ui-react';
 
+const assetPrefix = process.env.ASSET_PREFIX;
+
 const JohnSmith = (props) => (
     <Link href='../../dataholder/johnsmith' as={`${assetPrefix}/../../dataholder/johnsmith`}>
         <a>

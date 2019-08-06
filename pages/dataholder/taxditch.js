@@ -3,6 +3,9 @@ import Layout from '../../components/Layout';
 import { List } from 'semantic-ui-react'
   
 const taxditch = (props) => {
+
+    const assetPrefix = process.env.ASSET_PREFIX;
+    
     return (
         <Layout>
             <div className="ui centered grid">
