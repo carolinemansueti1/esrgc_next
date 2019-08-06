@@ -1,9 +1,7 @@
 import Link from 'next/link';
 import React from 'react';
 
-class Navigation extends React.Component {
-    render () {
-
+const Navigation = () => {
         const assetPrefix = process.env.ASSET_PREFIX;
 
         return (
@@ -78,6 +76,6 @@ class Navigation extends React.Component {
 
 
 );
-    }
+    
 }
 export default Navigation;
