@@ -1,6 +1,11 @@
+/* Declare assetPrefix for ESRGC test site */
+const prod = process.env.NODE_ENV === 'production'
+const assetPrefix = prod ? '/esrgc-index-test' : '';
+
 const withCSS = require('@zeit/next-css')
 
 module.exports = withCSS({
+  assetPrefix: assetPrefix,
   target: 'serverless',
   webpack (config) {
     config.module.rules.push({
@@ -18,3 +23,5 @@ module.exports = withCSS({
     return config
   }
 })
+
+

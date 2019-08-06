@@ -3,6 +3,9 @@ import Link from 'next/link';
 import { Accordion } from 'semantic-ui-react';
 import React from 'react';
 
+const assetPrefix = process.env.ASSET_PREFIX;
+
+
 export default class Dashboards extends React.Component {
     state = { activeIndex: null }
 

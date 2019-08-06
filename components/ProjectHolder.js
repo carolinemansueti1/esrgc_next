@@ -1,10 +1,12 @@
 import Link from 'next/link';
 import { Card, Image } from 'semantic-ui-react'; 
 
+const assetPrefix = process.env.ASSET_PREFIX;
+
 export default (props) => {
     
     return (
-            <Link href={{ pathname: '/projectholder', query: { id: props.id } }}>
+            <Link href={{ pathname: '/projectholder', query: { id: props.id } }} as={`${assetPrefix}/`}>
                 <div className="ui fluid card" key={props.title}>
                     <Card.Content>
                     <Image size="large"

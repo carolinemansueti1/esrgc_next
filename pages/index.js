@@ -4,6 +4,8 @@ import Layout from '../components/Layout';
 import Footer from '../components/Footer';
 import { Card, Image } from 'semantic-ui-react';
 
+const assetPrefix = process.env.ASSET_PREFIX;
+
 const Home = () => (
   <Layout>
     <div className="landing">
@@ -23,7 +25,7 @@ const Home = () => (
       <div className='ui grid container'>
         <div className='ui three column row'>
           <div className='ui column'>
-          <Link href="/about">
+          <Link href="/about" as={`${assetPrefix}/`}>
                 <div className="ui fluid card" key='33234'>
                     <Card.Content>
                     <Image size="large"
@@ -41,7 +43,7 @@ const Home = () => (
           </div>
 
           <div className='ui column'>
-          <Link href="/services">
+          <Link href="/services" as={`${assetPrefix}/`}>
                 <div className="ui fluid card" key="9889">
                     <Card.Content>
                     <Image size="large"
@@ -59,7 +61,7 @@ const Home = () => (
           </div>
 
           <div className='ui column'>
-          <Link href="/data">
+          <Link href="/data" as={`${assetPrefix}/`}>
                 <div className="ui fluid card" key="12312">
                     <Card.Content>
                     <Image size="large"

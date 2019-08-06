@@ -5,6 +5,8 @@ import Footer from '../components/Footer';
 import { Image, List } from 'semantic-ui-react';
 import MapContainer from '../components/MapContainer';
 
+const assetPrefix = process.env.ASSET_PREFIX;
+
 const Overview = () => (
     <div className='ui centered grid'>
         <div className='ui ten wide column'>
@@ -48,7 +50,7 @@ const Overview = () => (
                 <br />
                 <p>Contact us to learn more about the ESRGC and how we can partner with you.</p>
                 <br />
-                <Link href={'/contact'}>
+                <Link href={'/contact'} as={`${assetPrefix}/`}>
                     <a>
                         <button className="ui labeled icon blue button">
                             <i className="ui envelope outline icon"></i>
