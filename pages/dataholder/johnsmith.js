@@ -1,10 +1,10 @@
 import Link from 'next/link';
 import Layout from '../../components/Layout';
-import { List } from 'semantic-ui-react'
+import { List } from 'semantic-ui-react';
+
+const assetPrefix = process.env.ASSET_PREFIX;
   
 const taxditch = (props) => {
-
-    const assetPrefix = process.env.ASSET_PREFIX;
     
     return (
         <Layout>

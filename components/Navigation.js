@@ -1,8 +1,9 @@
 import Link from 'next/link';
 import React from 'react';
 
+const assetPrefix = process.env.ASSET_PREFIX;
+
 const Navigation = () => {
-        const assetPrefix = process.env.ASSET_PREFIX;
 
         return (
             <div>
