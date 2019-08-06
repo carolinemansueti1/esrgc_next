@@ -2,6 +2,7 @@ import Link from 'next/link';
 import Layout from '../../components/Layout';
 import { List } from 'semantic-ui-react'
 
+const assetPrefix = process.env.ASSET_PREFIX;
 const image = `${assetPrefix}/static/images/oceantracker.png`;
 
 const hazus = (props) => {
