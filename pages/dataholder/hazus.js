@@ -1,13 +1,15 @@
 import Link from 'next/link';
 import Layout from '../../components/Layout';
 import { List } from 'semantic-ui-react'
-  
+
+const image = `${assetPrefix}/static/images/oceantracker.png`;
+
 const hazus = (props) => {
     return (
         <Layout>
             <div className="ui centered grid">
                 <div className="ui ten wide column">
-                    <img src={`../static/images/oceantracker.png`} className='heroImage'/>
+                    <img src={image} className='heroImage'/>
                 </div>
                 <div className="ui ten wide column">
                     <div className='ui center aligned basic segment'>

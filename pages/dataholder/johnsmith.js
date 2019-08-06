@@ -3,6 +3,8 @@ import Layout from '../../components/Layout';
 import { List } from 'semantic-ui-react';
 
 const assetPrefix = process.env.ASSET_PREFIX;
+const image = `${assetPrefix}/static/images/compass.png`;
+
   
 const taxditch = (props) => {
     
@@ -10,7 +12,7 @@ const taxditch = (props) => {
         <Layout>
             <div className="ui centered grid">
                 <div className="ui ten wide column">
-                    <img src={`../static/images/compass.png`} className='heroImage'/>
+                    <img src={image} className='heroImage'/>
                 </div>
                 <div className="ui ten wide column">
                     <div className='ui center aligned basic segment'>

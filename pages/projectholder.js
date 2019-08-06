@@ -2,12 +2,14 @@ import Layout from '../components/Layout';
 import getProjects from '../data/projects.js';
 import Footer from '../components/Footer';
 
- const ProjectPage = (props) => {
+const assetPrefix = process.env.ASSET_PREFIX;
+
+const ProjectPage = (props) => {
 
     return (
         <Layout>
             <div className='ui center aligned basic segment'>
-                <img src={`../static/images/${props.project.image}`} className='heroImage'/>
+                <img src={`${assetPrefix}/static/images/${props.project.image}`} className='heroImage'/>
             </div>
 
             <div className='ui center aligned basic very padded segment'>

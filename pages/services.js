@@ -3,6 +3,15 @@ import Dashboards, { Maps } from '../components/Dashboards';
 import Layout from '../components/Layout';
 import Footer from '../components/Footer';
 
+const assetPrefix = process.env.ASSET_PREFIX;
+const tripod = `${assetPrefix}/static/images/tripod.png`;
+const eval = `${assetPrefix}/static/images/eval.png`;
+const cartographic = `${assetPrefix}/static/images/cartographic.png`;
+const drone = `${assetPrefix}/static/images/drone.png`;
+const compass = `${assetPrefix}/static/images/compass.png`;
+const plan = `${assetPrefix}/static/images/plan.png`;
+
+
 const ServiceList = (props) => (
     <div>
         <div className="ui center aligned basic padded segment">
@@ -27,7 +36,7 @@ const ServiceList = (props) => (
 
                             <div className='ui four wide column'>
                                 <div className="ui right aligned basic segment">
-                                    <img className="ui center aligned large image" src="../static/images/tripod.png" />
+                                    <img className="ui center aligned large image" src={tripod} />
                                 </div>
                             </div>
 
@@ -39,7 +48,7 @@ const ServiceList = (props) => (
 
                             <div className='ui four wide column'>
                                 <div className="ui right aligned basic segment">
-                                    <img className="ui center aligned large image" src="../static/images/eval.png" />
+                                    <img className="ui center aligned large image" src={eval} />
                                 </div>
                             </div>
 
@@ -70,7 +79,7 @@ const ServiceList = (props) => (
 
                             <div className='ui four wide column'>
                                 <div className="ui right aligned basic segment">
-                                    <img className="ui center aligned large image" src="../static/images/cartographic.png" />
+                                    <img className="ui center aligned large image" src={cartographic} />
                                 </div>
                             </div>
 
@@ -82,7 +91,7 @@ const ServiceList = (props) => (
 
                             <div className='ui four wide column'>
                                 <div className="ui right aligned basic segment">
-                                    <img className="ui center aligned large image" src="../static/images/drone.png" />
+                                    <img className="ui center aligned large image" src={drone} />
                                 </div>
                             </div>
 
@@ -113,7 +122,7 @@ const ServiceList = (props) => (
 
                             <div className='ui four wide column'>
                                 <div className="ui right aligned basic segment">
-                                    <img className="ui center aligned large image" src="../static/images/compass.png" />
+                                    <img className="ui center aligned large image" src={compass} />
                                 </div>
                             </div>
 
@@ -125,7 +134,7 @@ const ServiceList = (props) => (
 
                             <div className='ui four wide column'>
                                 <div className="ui right aligned basic segment">
-                                    <img className="ui center aligned large image" src="../static/images/plan.png" />
+                                    <img className="ui center aligned large image" src={plan} />
                                 </div>
                             </div>
 

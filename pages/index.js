@@ -4,14 +4,21 @@ import Layout from '../components/Layout';
 import Footer from '../components/Footer';
 import { Card, Image } from 'semantic-ui-react';
 
+const assetPrefix = process.env.ASSET_PREFIX;
+const banner = `${assetPrefix}/static/images/home_banner.png`;
+const logo =  `${assetPrefix}/static/images/ESRGC_Logo_Gold_no_text.png`;
+const data = `${assetPrefix}/static/images/assateague2.png`;
+const services = `${assetPrefix}/static/images/panelinstall.png`;
+const about = `${assetPrefix}/static/images/network.png`;
+
 const Home = () => (
   <Layout>
     <div className="landing">
       <div id='banner'>
-        <img src='../static/images/home_banner.png' />
+        <img src={banner} />
       </div>
       <div id='logo'>
-        <img src='../static/images/ESRGC_Logo_Gold_no_text.png' />
+        <img src={logo} />
       </div>
     </div>
 
@@ -27,7 +34,7 @@ const Home = () => (
                 <div className="ui fluid card" key='33234'>
                     <Card.Content>
                     <Image size="large"
-                        src='../static/images/assateague2.png'
+                        src={about}
                         title='About'
                     />
                     </Card.Content>
@@ -45,7 +52,7 @@ const Home = () => (
                 <div className="ui fluid card" key="9889">
                     <Card.Content>
                     <Image size="large"
-                        src="../static/images/panelinstall.png"
+                        src={services}
                         title='Services'
                     />
                     </Card.Content>
@@ -63,7 +70,7 @@ const Home = () => (
                 <div className="ui fluid card" key="12312">
                     <Card.Content>
                     <Image size="large"
-                        src="../static/images/network.png"
+                        src={data}
                         title='Data'
                     />
                     </Card.Content>

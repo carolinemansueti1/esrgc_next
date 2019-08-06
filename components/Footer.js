@@ -3,6 +3,11 @@ import { Segment, Container, List, Header, Grid, Divider } from 'semantic-ui-rea
 import Link from 'next/link';
 import MapContainer from './MapContainer';
 
+const assetPrefix = process.env.ASSET_PREFIX;
+const salisbury =  `${assetPrefix}/static/images/salisbury.png`;
+const tricountyLogo =  `${assetPrefix}/static/images/tricountyLogo.png`;
+const msrclogo =  `${assetPrefix}/static/images/msrgclogo.png`;
+
 const footer = () => (
     <div>
      <Segment inverted vertical style={{ margin: '2em 0em 0em', padding: '2em 0em' }}>
@@ -32,21 +37,21 @@ const footer = () => (
                         
                         <Link href={'http://www.midshore.org/index'}>
                           <a>
-                            <img className='ui small image' src='../static/images/msrclogo.png' />
+                            <img className='ui small image' src={msrclogo} />
                           </a>
                         </Link>
                         
                         
                         <Link href={'http://www.midshore.org/index'}>
                           <a>
-                            <img className='ui small image' src='../static/images/tricountyLogo.png'/>
+                            <img className='ui small image' src={tricountyLogo}/>
                           </a>
                         </Link>
                         
                         
                         <Link href={'http://www.lowershore.org/'}>
                           <a>
-                            <img className='ui small image' src='../static/images/salisbury.png'/>
+                            <img className='ui small image' src={salisbury}/>
                           </a>
                         </Link>
                         

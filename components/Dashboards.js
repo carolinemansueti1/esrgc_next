@@ -3,6 +3,20 @@ import Link from 'next/link';
 import { Accordion } from 'semantic-ui-react';
 import React from 'react';
 
+
+const assetPrefix = process.env.ASSET_PREFIX;
+const education_dash = `${assetPrefix}/static/images/education_dash.png`;
+const dbed = `${assetPrefix}/static/images/dbed.png`;
+const agIs_map =`${assetPrefix}/static/images/agIs_map.png`;
+const health_dash = `${assetPrefix}/static/images/health_dash.png`;
+const foodshed3 = `${assetPrefix}/static/images/foodshed3.png`;
+const wip_dash = `${assetPrefix}/static/images/wip_dash.png`;
+const dllr = `${assetPrefix}/static/images/dllr.png`;
+const eng_draw = `${assetPrefix}/static/images/eng_draw.png`;
+const pipes = `${assetPrefix}/static/images/pipes.png`;
+const dnr_dash = `${assetPrefix}/static/images/dnr_dash.png`;
+const give_dash = `${assetPrefix}/static/images/give_dash.png`;
+
 export default class Dashboards extends React.Component {
     state = { activeIndex: null }
 
@@ -28,7 +42,7 @@ export default class Dashboards extends React.Component {
                         <Link href={'http://esrgc.org/dashboards/education/index'}>
                             <a>
                                 <Card fluid className='spaced'
-                                    image={`../static/images/education_dash.png`}
+                                    image={education_dash}
                                     header="Maryland's Education Dashboard"   
                                 />
                             </a>
@@ -39,7 +53,7 @@ export default class Dashboards extends React.Component {
                         <Link href={'http://apps.esrgc.org/dashboards/countycomparison/'}>
                             <a>
                                 <Card fluid className='spaced'
-                                    image={`../static/images/dbed.png`}
+                                    image={dbed}
                                     header="DBED Explorer"             
                                 />
                             </a>
@@ -51,7 +65,7 @@ export default class Dashboards extends React.Component {
                         <Link href={'http://salisburyu.maps.arcgis.com/apps/View/index.html?appid=d683d74e38f84bd5b62d86d0377b0c46'}>
                             <a>
                                 <Card fluid className='spaced'
-                                    image={`../static/images/agIs_map.png`}
+                                    image={agIs_map}
                                     header="AgGis: Grow Your Potential with GIS"                          
                                 />
                             </a>
@@ -64,7 +78,7 @@ export default class Dashboards extends React.Component {
                         <Link href={'http://apps.esrgc.org/dashboards/health/'}>
                             <a>
                                 <Card fluid className='spaced'
-                                    image={`../static/images/health_dash.png`}
+                                    image={health_dash}
                                     header="Maryland's Healthcare Dashboard"                          
                                 />
                             </a>
@@ -75,7 +89,7 @@ export default class Dashboards extends React.Component {
                         <Link href={'http://apps.esrgc.org/maps/foodshed/'}>
                             <a>
                                 <Card fluid className='spaced'
-                                    image={`../static/images/foodshed3.png`}
+                                    image={foodshed3}
                                     header="Foodsheds"             
                                 />
                             </a>
@@ -86,7 +100,7 @@ export default class Dashboards extends React.Component {
                         <Link href={'http://apps.esrgc.org/dashboards/mda/home'}>
                             <a>
                                 <Card fluid className='spaced'
-                                    image={`../static/images/wip_dash.png`}
+                                    image={wip_dash}
                                     header="Chesapeake Bay WIP Dashboard"             
                                 />
                             </a>
@@ -99,7 +113,7 @@ export default class Dashboards extends React.Component {
                         <Link href={'http://www.dllr.state.md.us/workforcedashboard/'}>
                             <a>
                                 <Card fluid className='spaced'
-                                    image={`../static/images/dllr.png`}
+                                    image={dllr}
                                     header="DLLR Workforce Dashboard"             
                                 />
                             </a>
@@ -110,7 +124,7 @@ export default class Dashboards extends React.Component {
                         <Link href={'esrgc1.salisbury.edu/EngineerDrawing/Desktop/Index'}>
                             <a>
                                 <Card fluid className='spaced'
-                                    image={`../static/images/eng_draw.png`}
+                                    image={eng_draw}
                                     header="Engineering Drawing Application"             
                                 />
                             </a>
@@ -121,7 +135,7 @@ export default class Dashboards extends React.Component {
                         <Link href={'esrgc1.salisbury.edu/EngineerDrawing/Desktop/Index'}>
                             <a>
                                 <Card fluid className='spaced'
-                                    image={`../static/images/pipes.png`}
+                                    image={pipes}
                                     header="Pipelines Nearby"             
                                 />
                             </a>
@@ -135,7 +149,7 @@ export default class Dashboards extends React.Component {
                         <Link href={'http://esrgc.org/dashboards/dnrtrustfunds/dashboard'}>
                             <a>
                                 <Card fluid className='spaced'
-                                    image={`../static/images/dnr_dash.png`}
+                                    image={dnr_dash}
                                     header="Department of Natural Resources Trust Fund Dashboard"             
                                 />
                             </a>
@@ -146,7 +160,7 @@ export default class Dashboards extends React.Component {
                         <Link href={'http://givemaryland.org/'}>
                             <a>
                                 <Card fluid className='spaced'
-                                    image={`../static/images/give_dash.png`}
+                                    image={give_dash}
                                     header="Give Maryland Dashboard"             
                                 />
                             </a>

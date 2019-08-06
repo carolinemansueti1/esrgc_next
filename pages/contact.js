@@ -4,7 +4,8 @@ import Footer from '../components/Footer';
 import { CopyToClipboard } from 'react-copy-to-clipboard';
 import Layout from '../components/Layout';
 
-
+const assetPrefix = process.env.ASSET_PREFIX;
+const office = `${assetPrefix}/static/images/office.png`;
 
 export default class Contact extends React.Component {
     render() {
@@ -33,7 +34,7 @@ export default class Contact extends React.Component {
                                     <div className='ui eight wide column'>
                                         <div className="ui right aligned basic segment">
                                             <div className="ui center aligned large image">
-                                                <img src='../static/images/office.png' />
+                                                <img src={office} />
                                             </div>
                                         </div>
                                     </div>

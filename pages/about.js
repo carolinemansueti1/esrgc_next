@@ -5,6 +5,10 @@ import Footer from '../components/Footer';
 import { Image, List } from 'semantic-ui-react';
 import MapContainer from '../components/MapContainer';
 
+const msgic = `${assetPrefix}/static/images/msgic_logo.png`;
+const twitter = `${assetPrefix}/static/images/twitter.png`;
+const facebook = `${assetPrefix}/static/images/facebook.png`;
+
 const Overview = () => (
     <div className='ui centered grid'>
         <div className='ui ten wide column'>
@@ -61,7 +65,9 @@ const Overview = () => (
                 
                 <div className='ui center aligned very padded basic segment'>
                     <h3>Our Location</h3>
-                   
+                    <div className='central'>
+
+                    </div>
                 </div>
             </div>
         </div>
@@ -109,7 +115,7 @@ const Msgic = () => (
                 </div>
                 <div className='ui three wide column'>
                     <div className="ui right aligned basic segment">
-                        <img className="ui top aligned image" src="../static/images/msgic_logo.png" />
+                        <img className="ui top aligned image" src={msgic} />
                     </div>
                 </div>
             
@@ -212,7 +218,7 @@ const Social = () => (
                     </h2>
                     <Link href={'https://www.facebook.com/EasternShoreRegionalGisCooperativeesrgc/'}>
                         <a>
-                            <img className="ui medium rounded image" src={require('../static/images/facebook.png')} />
+                            <img className="ui medium rounded image" src={facebook} />
                         </a>
                     </Link>
                 </div>
@@ -228,7 +234,7 @@ const Social = () => (
                     <Link href={'https://twitter.com/esrgc?lang=en'}>
                         <a>
                             <div className="twitter">
-                                <img className="ui medium rounded image" src={require('../static/images/twitter.png')} />
+                                <img className="ui medium rounded image" src={twitter} />
                             </div>
                         </a>
                     </Link>

@@ -5,12 +5,14 @@ import { List } from 'semantic-ui-react'
 const taxditch = (props) => {
 
     const assetPrefix = process.env.ASSET_PREFIX;
+    const image = `${assetPrefix}/static/images/lidar_blue_green.png`;
+
     
     return (
         <Layout>
             <div className="ui centered grid">
                 <div className="ui ten wide column">
-                    <img src={`../static/images/lidar_blue_green.png`} className='heroImage'/>
+                    <img src={image} className='heroImage'/>
                 </div>
                 <div className="ui ten wide column">
                     <div className='ui center aligned basic segment'>
