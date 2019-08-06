@@ -3,6 +3,8 @@ import Head from 'next/head';
 import Navigation from '../components/Navigation';
 import Footer from '../components/Footer';
 
+const assetPrefix = process.env.ASSET_PREFIX;
+
 const Layout = ( props ) => {
     return (
         <div>
@@ -17,6 +19,10 @@ const Layout = ( props ) => {
                     integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"
                     crossOrigin="anonymous"
                 />
+                <link 
+                    rel="stylesheet"
+                    type="text/css"
+                    href={`${assetPrefix}/static/nprogress.css`}    />
             </Head>
             <Navigation />
             <body>
