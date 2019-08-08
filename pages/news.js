@@ -7,7 +7,7 @@ const news = () => (
                 Under Construction.
             </div>
         </div>
-        <Footer />
+        
         <style jsx>
             {`
             .spaced {

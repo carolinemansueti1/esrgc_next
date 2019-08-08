@@ -27,6 +27,8 @@ const Layout = ( props ) => {
             <Navigation />
             <body>
                 {props.children}
+            
+            <Footer />
             </body>
             
             <style jsx>

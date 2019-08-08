@@ -1,7 +1,8 @@
 import React from 'react';
 import Dashboards, { Maps } from '../components/Dashboards';
 import Layout from '../components/Layout';
-import Footer from '../components/Footer';
+import Link from 'next/link';
+import { Card } from 'semantic-ui-react';
 
 const assetPrefix = process.env.ASSET_PREFIX;
 const tripod = `${assetPrefix}/static/images/tripod.png`;
@@ -10,7 +11,6 @@ const cartographic = `${assetPrefix}/static/images/cartographic.png`;
 const drone = `${assetPrefix}/static/images/drone.png`;
 const compass = `${assetPrefix}/static/images/compass.png`;
 const plan = `${assetPrefix}/static/images/plan.png`;
-
 
 const ServiceList = (props) => (
     <div>
@@ -166,9 +166,7 @@ const services = ( props ) => {
                 <div className='ui center aligned basic very padded segment'>
                     <h1>Dashboards</h1>
                 </div>
-            
                 <Dashboards />
-                
             </Layout>
         </React.Fragment>
        

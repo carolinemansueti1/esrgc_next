@@ -2,7 +2,8 @@ import React from 'react';
 import Layout from '../components/Layout';
 import ProjectHolder from '../components/ProjectHolder';
 import getProjects from '../data/projects.js';
-import Footer from '../components/Footer';
+import { get } from 'http';
+
 
 const Work = (props) => {
     return (
@@ -34,13 +35,12 @@ const Work = (props) => {
                 </style>
 
                 </div>      
-                <Footer />    
+                
         </Layout>
     );
 } 
 
 Work.getInitialProps = async ({ }) => {
-    // Would fetch data
     return {  projects: getProjects()  } 
 }
 

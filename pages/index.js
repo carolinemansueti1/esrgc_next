@@ -88,7 +88,7 @@ const Home = () => (
       </div>
     </div>
     
-    <Footer />
+    
     <style jsx>
       {`
      

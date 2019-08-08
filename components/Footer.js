@@ -9,8 +9,8 @@ const tricountyLogo =  `${assetPrefix}/static/images/tricountyLogo.png`;
 const msrc = `${assetPrefix}/static/images/msrc.png`;
 
 const footer = () => (
-    <div>
-     <Segment inverted vertical style={{ margin: '2em 0em 0em', padding: '2em 0em' }}>
+    <div className='bottom'>
+     <Segment inverted vertical>
       <Container textAlign='center'>
         <Grid divided inverted stackable>
          
@@ -80,7 +80,9 @@ const footer = () => (
 
     <style jsx>
       {`
-    
+      .bottom {
+        margin-top: 7vh;
+      }
       .differentcolor {
         color: black;
         background-color: white;

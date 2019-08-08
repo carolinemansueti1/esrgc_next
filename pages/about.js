@@ -279,7 +279,7 @@ const about = ( props ) => (
             <Social />
      
         </div>
-        <Footer />
+        
     </Layout>
 );
 

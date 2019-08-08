@@ -40,7 +40,7 @@ const data = (props) => {
                         </div>
                 </div>
             </div>
-            <Footer />
+            
         </Layout>
     )
 }

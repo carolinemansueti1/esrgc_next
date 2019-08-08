@@ -1,6 +1,5 @@
 import Layout from '../components/Layout';
 import getProjects from '../data/projects.js';
-import Footer from '../components/Footer';
 
 const assetPrefix = process.env.ASSET_PREFIX;
 
@@ -48,7 +47,7 @@ const ProjectPage = (props) => {
                     `
                 }
             </style>
-            <Footer />
+            
         </Layout>
     )
 }
