@@ -25,6 +25,14 @@ const data = (props) => {
                                 </div>
 
                                 <div className="ui four wide column">
+                                    <DataHolder image="cartographic.png" title="Legislative District Maps" pathname="legislative" />
+                                </div>
+
+                                <div className="ui four wide column">
+                                    <DataHolder image="cartographic.png" title="Broadband" pathname="broadband" />
+                                </div>
+
+                                <div className="ui four wide column">
                                     <JohnSmith image="compass.png" />
                                 </div>
                             </div>

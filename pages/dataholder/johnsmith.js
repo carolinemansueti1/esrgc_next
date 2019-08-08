@@ -11,17 +11,20 @@ const taxditch = (props) => {
     return (
         <Layout>
             <div className="ui centered grid">
-                <div className="ui ten wide column">
-                    <img src={image} className='heroImage'/>
+                <div className='ui row'>
+                    <div className="ui eight wide column">
+                        <img src={image} className='heroImage'/>
+                    </div>
                 </div>
-                <div className="ui ten wide column">
+                
+                <div className="ui row">
                     <div className='ui center aligned basic segment'>
                         <h1>John Smith Project - Vienna, MD</h1>
                     </div>
                 </div>
 
-                <div className="ui ten wide column">
-                    <div className="ui left aligned segment">
+                <div className="ui eight wide column">
+                    <div className="ui left aligned basic segment">
                         <p>
                         Recently, there has been an increasing interest in linking the locations Smith placed on his 1612 map with their corresponding present-day coordinates using sophisticated digital mapping and spatial statistical analysis. The upcoming anniversary has created a desire to retrace the route that Smith took as a tribute to him and his cadre of explorers as well as the hope that some of the more out-of-the-way places around the Bay might garner more interest in their towns and villages with a link to 400-year old history. The Town of Vienna on the Nanticoke River in Dorchester County , Maryland fits this description. Thus, the goal of this project was to scientifically compare the location of the town of Vienna with the mapped depiction of the Nanticoke River and its associated Native American villages as recorded by John Smith in 1608.                         </p>
                         <p>
@@ -36,52 +39,57 @@ const taxditch = (props) => {
                     <h3>Available Datasets</h3>
                 </div>
 
-                <div className="ui row">
-                    <div className="ui five wide column">
-                        <h4>Unrectified Data </h4>
-                        <List>
-                            <List.Item>
-                                <Link href={'../../static/data/jsmith/unrect/john_smith_virginia_1612.zip'}  as={`${assetPrefix}/static/data/jsmith/unrect/john_smith_virginia_1612.zip`}>
-                                    <a>
-                                        <button className='ui labeled icon blue button'>
-                                            <i className='ui download icon' />
-                                                John Smith Map of 1612 (55 MB)
-                                        </button>
-                                    </a>
-                                </Link>
-                            </List.Item>
+                <div className='ui four column row'>
+                   <div className='ui column'>
+                        <div className="ui center aligned basic segment">
+                            <h3>Unrectified Data </h3>
+                        </div>
+                            <List>
+                                <List.Item>
+                                    <Link href={'../../static/data/jsmith/unrect/john_smith_virginia_1612.zip'}  as={`${assetPrefix}/static/data/jsmith/unrect/john_smith_virginia_1612.zip`}>
+                                        <a>
+                                            <button className='ui labeled icon blue button wide'>
+                                                <i className='ui download icon' />
+                                                    John Smith Map of 1612 (55 MB)
+                                            </button>
+                                        </a>
+                                    </Link>
+                                </List.Item>
 
-                            <List.Item>
-                                <Link href={'../../static/data/jsmith/unrect/all_coastline_exp.zip'} as={`${assetPrefix}/static/data/jsmith/unrect/all_coastline_exp.zip`}>
-                                    <a>
-                                        <button className='ui labeled icon blue button'>
-                                            <i className='ui download icon' />
-                                                Digitized Coastline Polyline shapefile (272 KB)
-                                        </button>
-                                    </a>
-                                </Link>   
-                            </List.Item>
+                                <List.Item>
+                                    <Link href={'../../static/data/jsmith/unrect/all_coastline_exp.zip'} as={`${assetPrefix}/static/data/jsmith/unrect/all_coastline_exp.zip`}>
+                                        <a>
+                                            <button className='ui labeled icon blue button wide'>
+                                                <i className='ui download icon' />
+                                                    Digitized Coastline Polyline shapefile (272 KB)
+                                            </button>
+                                        </a>
+                                    </Link>   
+                                </List.Item>
 
-                            <List.Item>
-                                <Link href={'../../static/datajsmith/unrect/all_towns_exp.zip'} as={`${assetPrefix}/static/data/jsmith/unrect/all_towns_exp.zip`}>
-                                    <a>
-                                        <button className='ui labeled icon blue button'>
-                                            <i className='ui download icon' />
-                                                Digitized Towns Point Shapefile (20 KB)
-                                        </button>
-                                    </a>
-                                </Link>   
-                            </List.Item>
-                        </List>
+                                <List.Item>
+                                    <Link href={'../../static/datajsmith/unrect/all_towns_exp.zip'} as={`${assetPrefix}/static/data/jsmith/unrect/all_towns_exp.zip`}>
+                                        <a>
+                                            <button className='ui labeled icon blue button wide'>
+                                                <i className='ui download icon' />
+                                                    Digitized Towns Point Shapefile (20 KB)
+                                            </button>
+                                        </a>
+                                    </Link>   
+                                </List.Item>
+                            </List>
                     </div>
 
-                    <div className="ui five wide column">
-                        <h4>Affine Rectified Data</h4>
+                    <div className='ui column'>
+                        <div className='ui center aligned basic segment'>
+                            <h3>Affine Rectified Data</h3>
+                        </div>
+                    
                         <List>
                             <List.Item>
                                 <Link href={'../../static/data/jsmith/affine/js_map_rectify_correctscale_and_orient.zip'} as={`${assetPrefix}/static/data/jsmith/affine/js_map_rectify_correctscale_and_orient.zip`}>
                                     <a>
-                                        <button className='ui labeled icon blue button'>
+                                        <button className='ui labeled icon blue button wide'>
                                             <i className='ui download icon' />
                                             John Smith Map of 1612 (51 MB)
                                         </button>
@@ -92,7 +100,7 @@ const taxditch = (props) => {
                             <List.Item>
                                 <Link href={'../../static/data/jsmith/affine/all_coastline_affine.zip'} as={`${assetPrefix}/static/data/jsmith/affine/all_coastline_affine.zip`}>
                                     <a>
-                                        <button className='ui labeled icon blue button'>
+                                        <button className='ui labeled icon blue button wide'>
                                             <i className='ui download icon' />
                                             Digitized Coastline Polyline shapefile (284 KB)
                                         </button>
@@ -103,7 +111,7 @@ const taxditch = (props) => {
                             <List.Item>
                                 <Link href={'../../static/data/jsmith/affine/all_towns_affine.zip'} as={`${assetPrefix}/static/data/jsmith/affine/all_towns_affine.zip`}>
                                     <a>
-                                        <button className='ui labeled icon blue button'>
+                                        <button className='ui labeled icon blue button wide'>
                                             <i className='ui download icon' />
                                                 Digitized Towns Point shapefile (16 KB)
                                         </button>
@@ -113,6 +121,7 @@ const taxditch = (props) => {
                         </List>
                     </div>
                 </div>
+               
             </div>
             
             <style jsx>
@@ -120,6 +129,10 @@ const taxditch = (props) => {
                             height: 50vh;
                             width: 60vw;
                             object-fit: cover;
+                    }
+
+                    .wide {
+                        width: 21vw;
                     }
                     `
                 }

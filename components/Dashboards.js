@@ -38,10 +38,10 @@ export default class Dashboards extends React.Component {
             <div className='ui centered grid'>
 
                 <div className='ui row'>
-                    <div className="ui five wide column">
+                    <div className="ui four wide column">
                         <Link href={'http://esrgc.org/dashboards/education/index'}>
                             <a>
-                                <Card fluid className='spaced'
+                                <Card fluid className='box'
                                     image={education_dash}
                                     header="Maryland's Education Dashboard"   
                                 />
@@ -49,10 +49,10 @@ export default class Dashboards extends React.Component {
                         </Link>
                     </div>
 
-                    <div className="ui five wide column">
+                    <div className="ui four wide column">
                         <Link href={'http://apps.esrgc.org/dashboards/countycomparison/'}>
                             <a>
-                                <Card fluid className='spaced'
+                                <Card fluid className='box'
                                     image={dbed}
                                     header="DBED Explorer"             
                                 />
@@ -61,10 +61,10 @@ export default class Dashboards extends React.Component {
                     </div>
 
 
-                    <div className="ui five wide column">
+                    <div className="ui four wide column">
                         <Link href={'http://salisburyu.maps.arcgis.com/apps/View/index.html?appid=d683d74e38f84bd5b62d86d0377b0c46'}>
                             <a>
-                                <Card fluid className='spaced'
+                                <Card fluid className='box'
                                     image={agIs_map}
                                     header="AgGis: Grow Your Potential with GIS"                          
                                 />
@@ -74,10 +74,10 @@ export default class Dashboards extends React.Component {
                 </div>
 
                 <div className='ui row'>
-                    <div className="ui five wide column">
+                    <div className="ui four wide column">
                         <Link href={'http://apps.esrgc.org/dashboards/health/'}>
                             <a>
-                                <Card fluid className='spaced'
+                                <Card fluid className='box'
                                     image={health_dash}
                                     header="Maryland's Healthcare Dashboard"                          
                                 />
@@ -85,10 +85,10 @@ export default class Dashboards extends React.Component {
                         </Link>
                     </div>
                     
-                    <div className="ui five wide column">
+                    <div className="ui four wide column">
                         <Link href={'http://apps.esrgc.org/maps/foodshed/'}>
                             <a>
-                                <Card fluid className='spaced'
+                                <Card fluid className='box'
                                     image={foodshed3}
                                     header="Foodsheds"             
                                 />
@@ -96,10 +96,10 @@ export default class Dashboards extends React.Component {
                         </Link>
                     </div>
 
-                    <div className="ui five wide column">
+                    <div className="ui four wide column">
                         <Link href={'http://apps.esrgc.org/dashboards/mda/home'}>
                             <a>
-                                <Card fluid className='spaced'
+                                <Card fluid className='box'
                                     image={wip_dash}
                                     header="Chesapeake Bay WIP Dashboard"             
                                 />
@@ -109,10 +109,10 @@ export default class Dashboards extends React.Component {
                 </div>
 
                 <div className='ui row'>
-                    <div className="ui five wide column">
+                    <div className="ui four wide column">
                         <Link href={'http://www.dllr.state.md.us/workforcedashboard/'}>
                             <a>
-                                <Card fluid className='spaced'
+                                <Card fluid className='box'
                                     image={dllr}
                                     header="DLLR Workforce Dashboard"             
                                 />
@@ -120,10 +120,10 @@ export default class Dashboards extends React.Component {
                         </Link>
                     </div>
 
-                    <div className="ui five wide column">
+                    <div className="ui four wide column">
                         <Link href={'esrgc1.salisbury.edu/EngineerDrawing/Desktop/Index'}>
                             <a>
-                                <Card fluid className='spaced'
+                                <Card fluid className='box'
                                     image={eng_draw}
                                     header="Engineering Drawing Application"             
                                 />
@@ -131,10 +131,10 @@ export default class Dashboards extends React.Component {
                         </Link>
                     </div>
 
-                    <div className="ui five wide column">
+                    <div className="ui four wide column">
                         <Link href={'esrgc1.salisbury.edu/EngineerDrawing/Desktop/Index'}>
                             <a>
-                                <Card fluid className='spaced'
+                                <Card fluid className='box'
                                     image={pipes}
                                     header="Pipelines Nearby"             
                                 />
@@ -145,10 +145,10 @@ export default class Dashboards extends React.Component {
                 </div>
 
                 <div className='ui row'>
-                    <div className="ui five wide column">
+                    <div className="ui four wide column">
                         <Link href={'http://esrgc.org/dashboards/dnrtrustfunds/dashboard'}>
                             <a>
-                                <Card fluid className='spaced'
+                                <Card fluid className='box'
                                     image={dnr_dash}
                                     header="Department of Natural Resources Trust Fund Dashboard"             
                                 />
@@ -156,10 +156,10 @@ export default class Dashboards extends React.Component {
                         </Link>
                     </div>
                 
-                    <div className="ui five wide column">
+                    <div className="ui four wide column">
                         <Link href={'http://givemaryland.org/'}>
                             <a>
-                                <Card fluid className='spaced'
+                                <Card fluid className='box'
                                     image={give_dash}
                                     header="Give Maryland Dashboard"             
                                 />
@@ -185,7 +185,16 @@ export default class Dashboards extends React.Component {
             
             .ui.row {
                 padding-bottom: 35vh;
-            }`}
+            }
+            
+            .box {
+                border-radius:10px;
+                border: 10px solid black;
+                color: red;
+              }
+              .box:hover {
+                box-shadow: 0 0 11px rgba(33,33,33,.2); 
+              }`}
             </style>
         </div>
     )
@@ -198,10 +207,10 @@ export const Maps = (props) => {
         <div className='ui centered grid'>
 
                 <div className='ui row'>
-                    <div className="ui five wide column">
+                    <div className="ui four wide column">
                         <Link href={'https://salisburyu.maps.arcgis.com/apps/MapSeries/index.html?appid=c879229ee61740508c330f61a894ab2a'}>
                             <a>
-                                <Card fluid className='spaced'
+                                <Card fluid className='box'
                                     image={`../static/images/salisbury.png`}
                                     header="Salisbury University Alumni Map"   
                                 />
@@ -209,10 +218,10 @@ export const Maps = (props) => {
                         </Link>
                     </div>
 
-                    <div className="ui five wide column">
+                    <div className="ui four wide column">
                         <Link href={'http://webmaps.esrgc.org/cbca/desktop/Map'}>
                             <a>
-                                <Card fluid className='spaced'
+                                <Card fluid className='box'
                                     image={`../static/images/critical_map.png`}
                                     header="Maryland Critical Area Map"             
                                 />
@@ -221,10 +230,10 @@ export const Maps = (props) => {
                     </div>
 
 
-                    <div className="ui five wide column">
+                    <div className="ui four wide column">
                         <Link href={'http://webmaps.esrgc.org/crimemappingapps'}>
                             <a>
-                                <Card fluid className='spaced'
+                                <Card fluid className='box'
                                     image={`../static/images/crimemap.png`}
                                     header="Crime Maps"                          
                                 />
@@ -234,10 +243,10 @@ export const Maps = (props) => {
                 </div>
 
                 <div className='ui row'>
-                    <div className="ui five wide column">
+                    <div className="ui four wide column">
                         <Link href={'http://apps.esrgc.org/maps/md-lidar-viewer/#8/38.800/-77.300'}>
                             <a>
-                                <Card fluid className='spaced'
+                                <Card fluid className='box'
                                     image={`../static/images/mdtopo.png`}
                                     header="Maryland Topo Viewer"                          
                                 />

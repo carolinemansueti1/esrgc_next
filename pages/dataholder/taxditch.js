@@ -11,16 +11,22 @@ const taxditch = (props) => {
     return (
         <Layout>
             <div className="ui centered grid">
-                <div className="ui ten wide column">
-                    <img src={image} className='heroImage'/>
-                </div>
-                <div className="ui ten wide column">
-                    <div className='ui center aligned basic segment'>
-                        <h1>Tax Ditches and PDAs</h1>
+                <div className='ui row'>
+                    <div className="ui eight wide column">
+                        <img src={image} className='heroImage'/>
                     </div>
                 </div>
 
-                <div className="ui ten wide column">
+                <div className='ui row'>
+                    <div className="ui eight wide column">
+                        <div className='ui center aligned basic segment'>
+                            <h1>Tax Ditches and PDAs</h1>
+                        </div>
+                    </div>
+                </div>
+                
+
+                <div className="ui eight wide column">
                     <div className="ui left aligned segment">
                         <p>
                         In the Summer and Fall of 2004 the ESRGC assisted the Maryland Department of Agriculture in digitizing and annotating tax ditches and public drainage associations in selected areas on the Lower Eastern Shore. Tax ditches from the Pocomoke, Nanticoke and Coastal Bays watersheds are available for free download as are PDAs from the Pocomoke and Coastal Bays watersheds. 
@@ -35,14 +41,14 @@ const taxditch = (props) => {
                     <h3>Available Datasets</h3>
                 </div>
 
-                <div className="ui row">
-                    <div className="ui five wide column">
+                <div className="ui five column row">
+                    <div className="ui center aligned column">
                         <h4>Tax Ditches</h4>
                         <List>
                             <List.Item>
                                 <Link href={'../../static/data/tditch/choptank_ditch.zip'} as={`${assetPrefix}/static/data/tditch/choptank_ditch.zip`}>
                                     <a>
-                                        <button className='ui labeled icon teal button'>
+                                        <button className='ui labeled icon teal button wide'>
                                             <i className='ui download icon' />
                                                 Choptank River Watershed
                                         </button>
@@ -53,7 +59,7 @@ const taxditch = (props) => {
                             <List.Item>
                                 <Link href={'../../static/data/tditch/coastalbays_ditch.zip'} as={`${assetPrefix}/static/data/tditch/coastalbays_ditch.zip`}>
                                     <a>
-                                        <button className='ui labeled icon teal button'>
+                                        <button className='ui labeled icon teal button wide'>
                                             <i className='ui download icon' />
                                                 Coastal Bays Watershed
                                         </button>
@@ -64,7 +70,7 @@ const taxditch = (props) => {
                             <List.Item>
                                 <Link href={'../../static/data/tditch/manokin_ditch.zip'} as={`${assetPrefix}/static/data/tditch/manokin_ditch.zip`}>
                                     <a>
-                                        <button className='ui labeled icon teal button'>
+                                        <button className='ui labeled icon teal button wide'>
                                             <i className='ui download icon' />
                                                 Manokin River Watershed
                                         </button>
@@ -75,7 +81,7 @@ const taxditch = (props) => {
                             <List.Item>
                                 <Link href={'../../static/data/tditch/nanticoke_ditch.zip'} as={`${assetPrefix}/static/data/tditch/nanticoke_ditch.zip`}>
                                     <a>
-                                        <button className='ui labeled icon teal button'>
+                                        <button className='ui labeled icon teal button wide'>
                                             <i className='ui download icon' />
                                                 Nanticoke River Watershed
                                         </button>
@@ -86,7 +92,7 @@ const taxditch = (props) => {
                             <List.Item>
                                 <Link href={'../../static/data/tditch/pocomoke_ditch.zip'} as={`${assetPrefix}/static/data/tditch/pocomoke_ditch.zip`}>
                                     <a>
-                                        <button className='ui labeled icon teal button'>
+                                        <button className='ui labeled icon teal button wide'>
                                             <i className='ui download icon' />
                                                 Pocomoke River Watershed
                                         </button>
@@ -97,7 +103,7 @@ const taxditch = (props) => {
                             <List.Item>
                                 <Link href={'../../static/data/tditch/wicomico_ditch.zip'} as={`${assetPrefix}/static/data/tditch/wicomico_ditch.zip`}>
                                     <a>
-                                        <button className='ui labeled icon teal button'>
+                                        <button className='ui labeled icon teal button wide'>
                                             <i className='ui download icon' />
                                                 Wicomico River Watershed
                                         </button>
@@ -108,13 +114,13 @@ const taxditch = (props) => {
                         </List>
                     </div>
 
-                    <div className="ui five wide column">
+                    <div className="ui center aligned column">
                         <h4>PDA (Public Drainage Association)</h4>
                         <List>
                             <List.Item>
                                 <Link href={'../../static/data/tditch/choptank_pda.zip'} as={`${assetPrefix}/static/data/tditch/choptank_pda.zip`}>
                                     <a>
-                                        <button className='ui labeled icon teal button'>
+                                        <button className='ui labeled icon teal button wide'>
                                             <i className='ui download icon' />
                                             Choptank River Watershed
                                         </button>
@@ -125,7 +131,7 @@ const taxditch = (props) => {
                             <List.Item>
                                 <Link href={'../../static/data/tditch/coastalbays_pda.zip'} as={`${assetPrefix}/static/data/tditch/coastalbays_pda.zip`}>
                                     <a>
-                                        <button className='ui labeled icon teal button'>
+                                        <button className='ui labeled icon teal button wide'>
                                             <i className='ui download icon' />
                                                 Coastal Bays Watershed
                                         </button>
@@ -136,7 +142,7 @@ const taxditch = (props) => {
                             <List.Item>
                                 <Link href={'../../static/data/tditch/manokin_pda.zip'} as={`${assetPrefix}/static/data/tditch/manokin_pda.zip`}>
                                     <a>
-                                        <button className='ui labeled icon teal button'>
+                                        <button className='ui labeled icon teal button wide'>
                                             <i className='ui download icon' />
                                                 Manokin River Watershed
                                         </button>
@@ -147,7 +153,7 @@ const taxditch = (props) => {
                             <List.Item>
                                 <Link href={'../../static/data/tditch/nanticoke_pda.zip'} as={`${assetPrefix}/static/data/tditch/nanticoke_pda.zip`}>
                                     <a>
-                                        <button className='ui labeled icon teal button'>
+                                        <button className='ui labeled icon teal button wide'>
                                             <i className='ui download icon' />
                                                 Nanticoke River Watershed
                                         </button>
@@ -158,7 +164,7 @@ const taxditch = (props) => {
                             <List.Item>
                                 <Link href={'../../static/data/tditch/pocomoke_pda.zip'} as={`${assetPrefix}/static/data/tditch/pocomoke_pda.zip`}>
                                     <a>
-                                        <button className='ui labeled icon teal button'>
+                                        <button className='ui labeled icon teal button wide'>
                                             <i className='ui download icon' />
                                                 Pocomoke River Watershed
                                         </button>
@@ -169,7 +175,7 @@ const taxditch = (props) => {
                             <List.Item>
                                 <Link href={'../../static/data/tditch/wicomico_pda.zip'} as={`${assetPrefix}/static/data/tditch/wicomico_pda.zip`}>
                                     <a>
-                                        <button className='ui labeled icon teal button'>
+                                        <button className='ui labeled icon teal button wide'>
                                             <i className='ui download icon' />
                                                 Wicomico River Watershed
                                         </button>
@@ -186,6 +192,9 @@ const taxditch = (props) => {
                             height: 50vh;
                             width: 60vw;
                             object-fit: cover;
+                    }
+                    .wide {
+                        width: 15vw;
                     }
                     `
                 }

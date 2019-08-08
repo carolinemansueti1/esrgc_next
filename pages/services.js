@@ -24,7 +24,7 @@ const ServiceList = (props) => (
                     <div className='ui row'>
                         <div className='ui centered grid'>
 
-                            <div className='ui eight wide column'>
+                            <div className='ui six wide column'>
                                 <div className="ui left aligned basic segment">
                                     
                                     <h1>Data Collection and Analysis</h1>
@@ -34,7 +34,7 @@ const ServiceList = (props) => (
                                 </div>
                             </div>
 
-                            <div className='ui four wide column'>
+                            <div className='ui two wide column'>
                                 <div className="ui right aligned basic segment">
                                     <img className="ui center aligned large image" src={tripod} />
                                 </div>
@@ -46,14 +46,14 @@ const ServiceList = (props) => (
                     <div className='ui row'>
                         <div className='ui centered grid'>
 
-                            <div className='ui four wide column'>
+                            <div className='ui two wide column'>
                                 <div className="ui right aligned basic segment">
                                     <img className="ui center aligned large image" src={eval1} />
                                 </div>
                             </div>
 
 
-                            <div className='ui eight wide column'>
+                            <div className='ui six wide column'>
                                 <div className="ui left aligned basic segment">
                                     <h1>GIS Implementation and Program Evaluation</h1>
                                     <p>
@@ -68,7 +68,7 @@ const ServiceList = (props) => (
                     <div className='ui row'>
                         <div className='ui centered grid'>
 
-                            <div className='ui eight wide column'>
+                            <div className='ui six wide column'>
                                 <div className="ui left aligned basic segment">
                                     <h1>Cartographic Services and Technical Support</h1>
                                     <p>
@@ -77,7 +77,7 @@ const ServiceList = (props) => (
                                 </div>
                             </div>
 
-                            <div className='ui four wide column'>
+                            <div className='ui two wide column'>
                                 <div className="ui right aligned basic segment">
                                     <img className="ui center aligned large image" src={cartographic} />
                                 </div>
@@ -89,14 +89,14 @@ const ServiceList = (props) => (
                     <div className='ui row'>
                         <div className='ui centered grid'>
 
-                            <div className='ui four wide column'>
+                            <div className='ui two wide column'>
                                 <div className="ui right aligned basic segment">
                                     <img className="ui center aligned large image" src={drone} />
                                 </div>
                             </div>
 
 
-                            <div className='ui eight wide column'>
+                            <div className='ui six wide column'>
                                 <div className="ui left aligned basic segment">
                                     <h1>Drone Services</h1>
                                     <p>
@@ -111,7 +111,7 @@ const ServiceList = (props) => (
                     <div className='ui row'>
                         <div className='ui centered grid'>
 
-                            <div className='ui eight wide column'>
+                            <div className='ui six wide column'>
                                 <div className="ui left aligned basic segment">
                                     <h1>GIS Training</h1>
                                     <p>
@@ -120,7 +120,7 @@ const ServiceList = (props) => (
                                 </div>
                             </div>
 
-                            <div className='ui four wide column'>
+                            <div className='ui two wide column'>
                                 <div className="ui right aligned basic segment">
                                     <img className="ui center aligned large image" src={compass} />
                                 </div>
@@ -132,14 +132,14 @@ const ServiceList = (props) => (
                     <div className='ui row'>
                         <div className='ui centered grid'>
 
-                            <div className='ui four wide column'>
+                            <div className='ui two wide column'>
                                 <div className="ui right aligned basic segment">
                                     <img className="ui center aligned large image" src={plan} />
                                 </div>
                             </div>
 
 
-                            <div className='ui eight wide column'>
+                            <div className='ui six wide column'>
                                 <div className="ui left aligned basic segment">
                                     <h1>Web Development and Data Visualization</h1>
                                     <p>

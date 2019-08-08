@@ -116,7 +116,7 @@ const Msgic = () => (
                 </div>
                 <div className='ui three wide column'>
                     <div className="ui right aligned basic segment">
-                        <img className="ui top aligned image" src={msgic} />
+                        <img className="ui top aligned small image" src={msgic} />
                     </div>
                 </div>
             
@@ -213,13 +213,13 @@ const Social = () => (
                     <h1>Follow us on Social Media</h1>
                 </div>
 
-                <div className='ui right floated right aligned four wide column'>
-                    <h2 className="ui center aligned header">
+                <div className='ui right floated right aligned three wide column'>
+                    <h3 className="ui center aligned header">
                         Facebook
-                    </h2>
+                    </h3>
                     <Link href={'https://www.facebook.com/EasternShoreRegionalGisCooperativeesrgc/'}>
                         <a>
-                            <img className="ui medium rounded image" src={facebook} />
+                            <img className="ui small rounded image" src={facebook} />
                         </a>
                     </Link>
                 </div>
@@ -228,14 +228,14 @@ const Social = () => (
 
                 </div>
 
-                <div className='ui left floated left aligned four wide column'>
-                    <h2 className="ui center aligned header">
+                <div className='ui left floated left aligned three wide column'>
+                    <h3 className="ui center aligned header">
                         Twitter: @esrgc
-                    </h2>
+                    </h3>
                     <Link href={'https://twitter.com/esrgc?lang=en'}>
                         <a>
                             <div className="twitter">
-                                <img className="ui medium rounded image" src={twitter} />
+                                <img className="ui small rounded image" src={twitter} />
                             </div>
                         </a>
                     </Link>
