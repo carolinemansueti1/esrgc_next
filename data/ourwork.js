@@ -41,7 +41,7 @@ export default () => {
         },
         {
             id: '2b',
-            image: "statistics.png",
+            image: "compass.png",
             title: "DLLC Dashboard/Storymap",
             description: "This dashboard was created for the Department of Labor, Licensing, and Regulation under the GeoDASH Initiative at Salisbury University. The dashboard is an interactive tool designed to visualize data related to the supply and demand of Maryland's workforce as well as the education and training opportunities that exist in the state.",
             link: [{url: "http://www.dllr.state.md.us/workforcedashboard/", title: "Visit the DLLC Dashboard"}]
