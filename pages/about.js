@@ -2,7 +2,7 @@ import Accord from '../components/Accord';
 import Link from 'next/link';
 import Layout from '../components/Layout';
 import Footer from '../components/Footer';
-import { Image, List } from 'semantic-ui-react';
+import { Image, List, Grid } from 'semantic-ui-react';
 import MapContainer from '../components/MapContainer';
 
 const assetPrefix = process.env.ASSET_PREFIX;
@@ -12,12 +12,14 @@ const facebook = `${assetPrefix}/static/images/facebook.png`;
 
 const Overview = () => (
     <div className='ui centered grid'>
-        <div className='ui ten wide column'>
+        <div className='ui eight wide column'>
             <div className="ui center aligned basic segment">
                 <h1 className="maroon">Overview</h1>
-                <p>
-                The goal of the ESRGC is to improve the GIS technology capabilities of the county and municipal governments of the six counties of the middle and lower Eastern Shore (Caroline, Talbot, Dorchester, Wicomico, Somerset, and Worcester). This includes providing advice on GIS implementation, technical support, equipment loans, data collection efforts, data analysis exercises, cartographic services, and GIS training. These services are provided at either no cost to the county or municipality or at a very reduced cost. Typically, the resources provided by the two Regional Councils, the University, and the cooperative organization structure means that local governments can avail themselves of ESRGC services for a fraction of their true cost. We also partner with state agencies on a number of local and statewide initiatives.
-                </p>
+                <div className='ui left aligned basic segment'>
+                    <p>
+                    The goal of the ESRGC is to improve the GIS technology capabilities of the county and municipal governments of the six counties of the middle and lower Eastern Shore (Caroline, Talbot, Dorchester, Wicomico, Somerset, and Worcester). This includes providing advice on GIS implementation, technical support, equipment loans, data collection efforts, data analysis exercises, cartographic services, and GIS training. These services are provided at either no cost to the county or municipality or at a very reduced cost. Typically, the resources provided by the two Regional Councils, the University, and the cooperative organization structure means that local governments can avail themselves of ESRGC services for a fraction of their true cost. We also partner with state agencies on a number of local and statewide initiatives.
+                    </p>
+                </div>
                 <br />
 
                 <h3>Industries We Serve</h3>
@@ -66,10 +68,20 @@ const Overview = () => (
                 
                 <div className='ui center aligned very padded basic segment'>
                     <h3>Our Location</h3>
-                    <div className='central'>
-
-                    </div>
+                    <Grid centered>
+                        <Grid.Row centered columns={3}>
+                            <Grid.Column>
+                                <MapContainer />
+                            </Grid.Column>
+                        </Grid.Row>
+                    </Grid>
                 </div>
+                <br />
+                <br />
+                <br />
+                <br />
+                <br />
+                <br />
             </div>
         </div>
     </div>
@@ -86,7 +98,7 @@ const Msgic = () => (
         <div className='ui row'>
             <div className='ui centered grid'>
                 
-                <div className='ui seven wide column'>
+                <div className='ui six wide column'>
                     <div className="ui left aligned basic segment">
                         <p>
                         The ESRGC is proud to support GIS and GIS professionals in Maryland as a sponsor of the Maryland State Geographic Information Committee (MSGIC).  Formed in 1992, MSGIC aims to grow GIS and promote coordinated development and efficent use of resources in Maryland. MSGIC meets quarterly, usually on the second Wednesday of January, April, July and October. Please visit the MSGIC website for more information about quarterly meeting dates and locations.
@@ -114,9 +126,9 @@ const Msgic = () => (
                         </div>
                     </div>
                 </div>
-                <div className='ui three wide column'>
+                <div className='ui two wide column'>
                     <div className="ui right aligned basic segment">
-                        <img className="ui top aligned small image" src={msgic} />
+                        <img className="ui top aligned medium image" src={msgic} />
                     </div>
                 </div>
             
@@ -127,28 +139,33 @@ const Msgic = () => (
 
 const Events = () => (
     <div className='ui centered grid'>
-        <div className='ui ten wide column'>
+        <div className='ui eight wide column'>
             <div className="ui center aligned basic segment">
                 <h2>Upcoming Events</h2>
-                <p>
-                    The ESRGC supports GIS professionals in the region by hosting quartely meetings to provide an arena for communication and collaboration.  Our discussions focus on the projects, technical know-how, and general GIS needs specific to the counties and municipalities in attendence.    Industry representatives and the public are welcome to attend.
-                </p>
+                <div className='ui left aligned basic segment'>
+                    <p>
+                        The ESRGC supports GIS professionals in the region by hosting quartely meetings to provide an arena for communication and collaboration.  Our discussions focus on the projects, technical know-how, and general GIS needs specific to the counties and municipalities in attendence.    Industry representatives and the public are welcome to attend.
+                    </p>
+                </div>
             </div>
         </div>
 
-        <div className='ui ten wide column'>
+        <div className='ui row'>
+        <div className='ui eight wide column'>
             <div className='ui centered equal width grid'>
                 <div className='ui column'>
                     <div className='ui center aligned basic segment'>
                         <h5>MidShore Regional GIS Committee Meetings</h5>
-
-                        <p>Meetings take place in Easton and discussion is centered on topics in Caroline, Dorchester, and Talbot Counties.</p>
+                        
+                        <div className='ui left aligned basic segment'>
+                            <p>Meetings take place in Easton and discussion is centered on topics in Caroline, Dorchester, and Talbot Counties.</p>
+                        </div>
 
                         <ul className="unstyled">
-                            <li>January 9th 2019</li>
-                            <li>February 9th 2019</li>
-                            <li>March 9th 2019</li>
-                            <li>April 9th 2019</li>
+                            <li>April 3, 2019</li>
+                            <li>June 28, 2019</li>
+                            <li>October 11, 2020</li>
+                            <li>January 15, 2020</li>
                             <li className='spaced'>
                                 <Link href={'http://msgic.org/join-msgic/'}>
                                     <a>
@@ -167,13 +184,15 @@ const Events = () => (
                     <div className='ui center aligned basic segment'>
                         <h5>TriCounty Council GIS Committee Meetings</h5>
 
+                        <div className='ui left aligned basic segment'>    
                         <p>Meetings take place in Salisbury and discussion is centered on topics in Somerset, Wicomico, and Worcester Counties.</p>
+                        </div>
 
                         <ul className="unstyled">
-                            <li>January 10th 2019</li>
-                            <li>February 9th 2019</li>
-                            <li>March 9th 2019</li>
-                            <li>April 9th 2019</li>
+                            <li>April 12, 2019</li>
+                            <li>June 28, 2019</li>
+                            <li>October 9, 2020</li>
+                            <li>January 22, 2020</li>
                             <li className='spaced'>
                                 <Link href={'http://www.lowershore.org/AboutUs/ContactUs.aspx'}>
                                     <a>
@@ -189,7 +208,7 @@ const Events = () => (
                 </div>
             </div>
         </div>
-
+        </div>
         <style jsx>
             {`
             .unstyled {
@@ -206,7 +225,7 @@ const Events = () => (
 
 const Social = () => (
     <div className='ui centered grid'>
-        <div className='ui ten wide column'>
+        <div className='ui eight wide column'>
 
             <div className='ui centered equal width very relaxed grid'>
                 <div className='ui row'>
@@ -230,7 +249,7 @@ const Social = () => (
 
                 <div className='ui left floated left aligned three wide column'>
                     <h3 className="ui center aligned header">
-                        Twitter: @esrgc
+                        Twitter
                     </h3>
                     <Link href={'https://twitter.com/esrgc?lang=en'}>
                         <a>
@@ -266,7 +285,7 @@ const about = ( props ) => (
                 <h1>Meet Our Staff</h1>
                 <Accord />
 
-                <div className='ui center aligned very padded segment'>
+                <div className='ui center aligned very padded basic segment'>
                     <Image 
                         src='../static/images/staff.png'
                         centered

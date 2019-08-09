@@ -223,7 +223,7 @@ class AccordionRight extends Component {
     render () {
       return (
         <div className='accHolder'>
-          <Grid columns={2} divided>
+          <Grid centered columns={2}>
             <Grid.Column floated='left' width={8}>
               <AccordionLeft />
             </Grid.Column>

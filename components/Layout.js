@@ -24,11 +24,11 @@ const Layout = ( props ) => {
                     type="text/css"
                     href={`${assetPrefix}/static/nprogress.css`}    />
             </Head>
-            <Navigation />
-            <body>
-                {props.children}
             
-            <Footer />
+            <body>
+                <Navigation />
+                    {props.children}
+            
             </body>
             
             <style jsx>

@@ -24,132 +24,135 @@ const dashboards = (props) => (
 
                         <div className='ui row'>
                             <div className="ui four wide column">
-                                <Link href={'http://esrgc.org/dashboards/education/index'}>
-                                    <a>
-                                        <Card fluid className='box'
-                                            image={education_dash}
-                                            header="Maryland's Education Dashboard"   
-                                        />
-                                    </a>
-                                </Link>
+
+                                <Card fluid>
+                                    <Link href={'http://esrgc.org/dashboards/education/index'}>
+                                        <a>
+                                            <Image src={education_dash} />
+                                            <h4>Maryland's Education Dashboard</h4>
+                                        </a>
+                                    </Link>
+                                </Card>
+                               
                             </div>
 
                             <div className="ui four wide column">
-                                <Link href={'http://apps.esrgc.org/dashboards/countycomparison/'}>
-                                    <a>
-                                        <Card fluid className='box'
-                                            image={dbed}
-                                            header="DBED Explorer"             
-                                        />
-                                    </a>
-                                </Link>
+                                <Card fluid>
+                                    <Link href={'http://apps.esrgc.org/dashboards/countycomparison/'}>
+                                        <a>
+                                            <Image src={dbed} />
+                                            <h4>DBED Explorer</h4>
+                                        </a>
+                                    </Link>
+                                </Card>
                             </div>
 
 
                             <div className="ui four wide column">
-                                <Link href={'http://salisburyu.maps.arcgis.com/apps/View/index.html?appid=d683d74e38f84bd5b62d86d0377b0c46'}>
-                                    <a>
-                                        <Card fluid className='box'
-                                            image={agIs_map}
-                                            header="AgGis: Grow Your Potential with GIS"                          
-                                        />
-                                    </a>
-                                </Link>
+                                <Card fluid>
+                                    <Link href={'http://salisburyu.maps.arcgis.com/apps/View/index.html?appid=d683d74e38f84bd5b62d86d0377b0c46'}>
+                                        <a>
+                                            <Image src={agIs_map} />
+                                            <h4>AgGis: Grow Your Potential with GIS</h4>
+                                        </a>
+                                    </Link>
+                                </Card>
                             </div>
+
                         </div>
 
                         <div className='ui row'>
                             <div className="ui four wide column">
-                                <Link href={'http://apps.esrgc.org/dashboards/health/'}>
-                                    <a>
-                                        <Card fluid className='box'
-                                            image={health_dash}
-                                            header="Maryland's Healthcare Dashboard"                          
-                                        />
-                                    </a>
-                                </Link>
+                                <Card fluid>
+                                    <Link href={'http://apps.esrgc.org/dashboards/health/'}>
+                                        <a>
+                                            <Image src={health_dash} />
+                                            <h4>Maryland's Healthcare Dashboard</h4>
+                                        </a>
+                                    </Link>
+                                </Card>
                             </div>
                             
                             <div className="ui four wide column">
-                                <Link href={'http://apps.esrgc.org/maps/foodshed/'}>
-                                    <a>
-                                        <Card fluid className='box'
-                                            image={foodshed3}
-                                            header="Foodsheds"             
-                                        />
-                                    </a>
-                                </Link>
+                                <Card fluid>
+                                    <Link href={'http://apps.esrgc.org/maps/foodshed/'}>
+                                        <a>
+                                            <Image src={foodshed3} />
+                                            <h4>Foodsheds</h4>
+                                        </a>
+                                    </Link>
+                                </Card>
                             </div>
 
                             <div className="ui four wide column">
-                                <Link href={'http://apps.esrgc.org/dashboards/mda/home'}>
-                                    <a>
-                                        <Card fluid className='box'
-                                            image={wip_dash}
-                                            header="Chesapeake Bay WIP Dashboard"             
-                                        />
-                                    </a>
-                                </Link>
+                                <Card fluid>
+                                    <Link href={'http://apps.esrgc.org/dashboards/mda/home'}>
+                                        <a>
+                                            <Image src={wip_dash} />
+                                            <h4>Chesapeake Bay WIP Dashboard</h4>
+                                        </a>
+                                    </Link>
+                                </Card>
                             </div>
                         </div>
 
                         <div className='ui row'>
                             <div className="ui four wide column">
-                                <Link href={'http://www.dllr.state.md.us/workforcedashboard/'}>
-                                    <a>
-                                        <Card fluid className='box'
-                                            image={dllr}
-                                            header="DLLR Workforce Dashboard"             
-                                        />
-                                    </a>
-                                </Link>
+                                <Card fluid>
+                                    <Link href={'http://www.dllr.state.md.us/workforcedashboard/'}>
+                                        <a>
+                                            <Image src={dllr} />
+                                            <h4>DLLR Workforce Dashboard</h4>
+                                        </a>
+                                    </Link>
+                                </Card>
                             </div>
 
                             <div className="ui four wide column">
-                                <Link href={'esrgc1.salisbury.edu/EngineerDrawing/Desktop/Index'}>
-                                    <a>
-                                        <Card fluid className='box'
-                                            image={eng_draw}
-                                            header="Engineering Drawing Application"             
-                                        />
-                                    </a>
-                                </Link>
+                                <Card fluid>
+                                    <Link href={'esrgc1.salisbury.edu/EngineerDrawing/Desktop/Index'}>
+                                        <a>
+                                            <Image src={eng_draw} />
+                                            <h4>Engineering Drawing Application</h4>
+                                        </a>
+                                    </Link>
+                                </Card>
                             </div>
 
                             <div className="ui four wide column">
-                                <Link href={'esrgc1.salisbury.edu/EngineerDrawing/Desktop/Index'}>
-                                    <a>
-                                        <Card fluid className='box'
-                                            image={pipes}
-                                            header="Pipelines Nearby"             
-                                        />
-                                    </a>
-                                </Link>
+                                <Card fluid>
+                                    <Link href={'esrgc1.salisbury.edu/EngineerDrawing/Desktop/Index'}>
+                                        <a>
+                                            <Image src={pipes} />
+                                            <h4>Pipelines Nearby</h4>
+                                        </a>
+                                    </Link>
+                                </Card>
                             </div>
 
                         </div>
 
                         <div className='ui row'>
                             <div className="ui four wide column">
-                                <Link href={'http://esrgc.org/dashboards/dnrtrustfunds/dashboard'}>
-                                    <a>
-                                        <Card fluid className='box'
-                                            image={dnr_dash}
-                                            header="Department of Natural Resources Trust Fund Dashboard"             
-                                        />
-                                    </a>
-                                </Link>
+                                <Card fluid>
+                                    <Link href={'http://esrgc.org/dashboards/dnrtrustfunds/dashboard'}>
+                                        <a>
+                                            <Image src={dnr_dash} />
+                                            <h4>Department of Natural Resources Trust Fund Dashboard</h4>
+                                        </a>
+                                    </Link>
+                                </Card>
                             </div>
                         
                             <div className="ui four wide column">
-                                <Link href={'http://givemaryland.org/'}>
-                                    <a>
-                                        <Card fluid className='box'
-                                            image={give_dash}
-                                            header="Give Maryland Dashboard"             
-                                        />
-                                    </a>
-                                </Link>
+                                <Card fluid>
+                                    <Link href={'http://givemaryland.org/'}>
+                                        <a>
+                                            <Image src={give_dash} />
+                                            <h4>Give Maryland Dashboard</h4>
+                                        </a>
+                                    </Link>
+                                </Card>
                             </div>
                             
                         </div>
@@ -158,7 +161,10 @@ const dashboards = (props) => (
                     </div>
                 </div>
             <style jsx>
-            {`.imgHolder:
+            {`a {
+                color: inherit;
+            }
+            .imgHolder:
             max-width: 21vw; 
             max-height: 15vh;
         

@@ -26,7 +26,8 @@ export default class Contact extends React.Component {
                                                 1101 Camden Ave <br />
                                                 Salisbury, MD 21801 <br /> <br /> <br />
                                                 Phone: (410) 677-5390<br /> <br />
-                                                <CopyToClipboard text='esrgc@salisbury.edu'><div className="mini ui grey right labeled icon button"><i className="copy outline icon"></i>Email: esrgc@salisbury.edu</div></CopyToClipboard> <br />
+                                                <a href="mailto:esrgc@salisbury.edu"><div className="mini ui grey right labeled icon button"><i className="envelope outline icon"></i>Email: esrgc@salisbury.edu</div></a> 
+                                                <br />
                                             </p>
                                         </div>
                                     </div>

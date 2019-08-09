@@ -1,10 +1,10 @@
 import Layout from '../components/Layout';
-import getProjects from '../data/projects.js';
-
+import getWork from '../data/ourwork.js';
+import { Button } from 'semantic-ui-react';
 
 const assetPrefix = process.env.ASSET_PREFIX;
 
-const ProjectPage = (props) => {
+const OurWorkHolder = (props) => {
 
     return (
         <Layout>
@@ -27,18 +27,11 @@ const ProjectPage = (props) => {
                 </div>
 
                 <div className='ui row'>
-                    <div className='ui center aligned basic segment'>
-                        <h3>Related Links</h3>
-                    </div>
-                </div>
-                <div className='ui row'>
                     <div className='ui eight wide column'>
                         <div className='ui center aligned basic very padded segment'>
                             <ul>
                                 {props.project.link.map(onelink => (
-                                    <li>
-                                       <a href={onelink.url}>{onelink.title}</a>
-                                    </li>
+                                    <li><Button><a href={onelink.url}>{onelink.title}</a></Button></li>
                                 ))}
                             </ul>
                         </div>
@@ -68,10 +61,10 @@ const ProjectPage = (props) => {
     )
 }
 
-ProjectPage.getInitialProps = async ({query}) => {
+OurWorkHolder.getInitialProps = async ({query}) => {
     let {id} = {...query}
-    let project = getProjects().find(m => m.id == id)
+    let project = getWork().find(m => m.id == id)
     return { project } 
 }
 
-export default ProjectPage;
+export default OurWorkHolder;
