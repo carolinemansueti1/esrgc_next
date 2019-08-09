@@ -10,7 +10,7 @@ export default () => {
         },
         { 
             id: '1b',
-            image: "oysters.png",
+            image: "assateague.png",
             title: "Climate Change Adaptation Planning for MDSHA",
             description: "The Mid-Atlantic region is predicted to have some of the worst impacts of Sea Level Change because of the combination of rise, subsidence, and relative position to the North Atlantic Gyre. With 3,190 miles of coast, Maryland State Highway Administration is prioritizing and mitigating the potential impact of baseline SLC on SHA assets, as well as the increased impact of coastal flooding that will result. Using USACE SLC projections, USGS studies, and NOAA tidal observations, the ESRGC provides SHA forecast intelligence on 2015, 2050, and 2100 scenarios, helping protect Maryland’s long-term investments. ",
             link: [{url: "/dataholder/mdsha", title: "Maryland SHA SLC Data Services"}]
@@ -18,7 +18,7 @@ export default () => {
         },
         { 
             id: '1c',
-            image: "oysters.png",
+            image: "assateague2.png",
             title: "Critical Area Boundary Mapping",
             description: "The ESRGC is currently working with Maryland’s Department of Natural Resources, the Critical Area Commission, and County representatives in the statewide updating of Maryland’s Critical Area Boundary. Analysts are using high resolution true-color orthophotography, color infrared imagery, and ortho-rectified tidal wetlands maps to determine the edge of shoreline and the landward edge of tidal wetlands which will then be used to create the 1000 foot Critical Area boundary.",
             link: [{url: "http://dnr.maryland.gov/criticalarea/Pages/map_update.aspx", title: "Chesapeake Bay Critical Area page"}]
@@ -26,7 +26,7 @@ export default () => {
         },
         { 
             id: '1d',
-            image: "oysters.png",
+            image: "pier_dock.png",
             title: "Maryland FirstNet Broadband Initiative",
             description: " FirstNet is a national project which aims to provide emergency responders with the first nationwide, high-speed, wireless broadband network dedicated to public safety. Commercial broadband networks were not designed to support public safety needs and are unreliable in emergency events. Emergency responders are unable to communicate when too many users access a commercial network at the same time and crash the network during an emergency event, such as a natural disaster. FirstNet will allow first responders and other public safety units to communicate during an emergency event using a network devoted entirely to public safety. The ESRGC provides Maryland’s FirstNet team with comprehensive mapping support, experience in mapping broadband assets and wireless coverage in Maryland, and website development. ",
             link: [{url: "https://firstnet.maryland.gov/Pages/default.aspx", title: "Maryland FirstNet Broadband Initiative page"}]
@@ -34,21 +34,21 @@ export default () => {
         },
         {
             id: '2a',
-            image: "oysters.png",
+            image: "panelinstall.png",
             title: "Lead Nursing Forward Website",
             description: "LeadNursingForward.org aims to address the nurse and nursing faculty shortage by providing Maryland a “one-stop shop” where users can: learn about the nurse educator role and find inspiration in educators’ stories, find programs to pursue an advanced degree in nursing, search for open educator positions in academic institutions and healthcare organizations. Salisbury University School of Nursing (SUSON), in collaboration with University of Maryland School of Nursing (UMSON), is committed to developing this free web resource to help address the nursing shortage. A third partner, the Eastern Shore Regional GIS Cooperative (ESRGC), an SU outreach entity, has developed the design, code and programming for this site. This project is produced with the assistance of a Nurse Support Program II (NSPII) administered by the Maryland Higher Education Commission (MHEC) and funded through the Health Services Cost Review Commission (HSCRC).",
             link: [{url: "https://www.leadnursingforward.org/", title: "Visit the Lead Nursing Forward Website"}]
         },
         {
             id: '2b',
-            image: "oysters.png",
+            image: "statistics.png",
             title: "DLLC Dashboard/Storymap",
             description: "This dashboard was created for the Department of Labor, Licensing, and Regulation under the GeoDASH Initiative at Salisbury University. The dashboard is an interactive tool designed to visualize data related to the supply and demand of Maryland's workforce as well as the education and training opportunities that exist in the state.",
             link: [{url: "http://www.dllr.state.md.us/workforcedashboard/", title: "Visit the DLLC Dashboard"}]
         },
         {
             id: '2c',
-            image: "oysters.png",
+            image: "oceantracker.png",
             title: "Maryland's Education Dashboard",
             description: "The Maryland Education Dashboard was developed to explore education funding and performance goals. It visualizes Maryland State Department of Education data from 2010-2017 by year, by geography, and by school. The dashboard was developed by the Eastern Shore Regional GIS Cooperative in partnership with the Mid-Shore Regional Council, and funded by the Rural Maryland Prosperity Investment Fund administered through the Rural Maryland Council. ",
             link: [{url: "http://www.esrgc.org/dashboards/education/index", title: "Visit Maryland's Education Dashboard"}]

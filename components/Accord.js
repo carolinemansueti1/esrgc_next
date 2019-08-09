@@ -1,6 +1,8 @@
 import React, { Component } from 'react';
 import { Accordion, Icon, Grid } from 'semantic-ui-react';
 
+const assetPrefix = process.env.ASSET_PREFIX;
+
 class AccordionLeft extends Component {
   state = { activeIndex: null }
 
@@ -30,6 +32,7 @@ class AccordionLeft extends Component {
           <div className='acc-inside'>
             Dr. Scott is a professor of Geography and Geosciences at SU. He holds a Masters and Ph.D in Geography, specializing in geographic information science, from the University of South Carolina. To date, his research at Salisbury University has focused on the use of GIS technology to support local government applications such as public transit routing, tracking failing septic systems, and analyzing land use patterns. Dr. Scott has also worked extensively to model Maryland's vulnerability to sea-level change. For an abbreviated version of Dr. Scott’s CV as of 2017, click <span><a href="./img/msscott.pdf" download>here.</a></span><br />
           </div>
+          
         </Accordion.Content>
 
         <Accordion.Title active={activeIndex === 1} index={1} onClick={this.handleClick}>
@@ -48,10 +51,15 @@ class AccordionLeft extends Component {
 
         <Accordion.Title active={activeIndex === 2} index={2} onClick={this.handleClick}>
           <div className="acc-panel">
+          <div >
+              <img className='ui right floated mini image' src={`${assetPrefix}/static/images/staff/lauren_mcdermott.png`} />
+            </div>
             <Icon name='dropdown' />
             Lauren D. McDermott <br />
             Practice Manager <br />
             ldmcdermott@salisbury.edu
+
+           
           </div>
         </Accordion.Title>
         <Accordion.Content active={activeIndex === 2}>

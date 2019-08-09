@@ -7,7 +7,7 @@ export default (props) => {
     
     return (
             <Link href={{ pathname: '/ourworkholder', query: { id: props.id } }} as={`${assetPrefix}/ourworkholder`}>
-                <div className="ui fluid card" key={props.title}>
+                <div className="ui fluid card spaced" key={props.title}>
                     <Card.Content>
                     <Image size="large"
                         src={`${assetPrefix}/static/images/${props.image}`}
@@ -19,6 +19,14 @@ export default (props) => {
                         {props.title}
                         </h3>
                     </Card.Content>
+
+                    <style jsx>
+                        {`
+                        .spaced {
+                            margin-top: 2vh;
+                            margin-bottom:2vh;
+                        }`}
+                    </style>
                 </div>
             </Link>
  
