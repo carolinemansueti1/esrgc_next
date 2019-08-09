@@ -1,6 +1,6 @@
 
 import Head from 'next/head';
-import Navigation from '../components/Navigation';
+import MenuA from '../components/MenuA';
 import Footer from '../components/Footer';
 
 const assetPrefix = process.env.ASSET_PREFIX;
@@ -26,7 +26,7 @@ const Layout = ( props ) => {
             </Head>
             
             <body>
-                <Navigation />
+                <MenuA />
                     {props.children}
             
             </body>
