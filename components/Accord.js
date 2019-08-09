@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import { Accordion, Icon, Grid } from 'semantic-ui-react';
+import Link from 'next/link';
 
 const assetPrefix = process.env.ASSET_PREFIX;
 
@@ -30,7 +31,7 @@ class AccordionLeft extends Component {
         </Accordion.Title>
         <Accordion.Content active={activeIndex === 0}>
           <div className='acc-inside'>
-            Dr. Scott is a professor of Geography and Geosciences at SU. He holds a Masters and Ph.D in Geography, specializing in geographic information science, from the University of South Carolina. To date, his research at Salisbury University has focused on the use of GIS technology to support local government applications such as public transit routing, tracking failing septic systems, and analyzing land use patterns. Dr. Scott has also worked extensively to model Maryland's vulnerability to sea-level change. For an abbreviated version of Dr. Scott’s CV as of 2017, click <span><a href="./img/msscott.pdf" download>here.</a></span><br />
+            Dr. Scott is a professor of Geography and Geosciences at SU. He holds a Masters and Ph.D in Geography, specializing in geographic information science, from the University of South Carolina. To date, his research at Salisbury University has focused on the use of GIS technology to support local government applications such as public transit routing, tracking failing septic systems, and analyzing land use patterns. Dr. Scott has also worked extensively to model Maryland's vulnerability to sea-level change. For an abbreviated version of Dr. Scott’s CV as of 2017, click <Link href={`../static/images/msscott.pdf`} as={`${assetPrefix}/static/images/msscott.pdf`}><a>here.</a></Link><br />
           </div>
           
         </Accordion.Content>
@@ -52,7 +53,9 @@ class AccordionLeft extends Component {
         <Accordion.Title active={activeIndex === 2} index={2} onClick={this.handleClick}>
           <div className="acc-panel">
           <div >
-              <img className='ui right floated mini image' src={`${assetPrefix}/static/images/staff/lauren_mcdermott.png`} />
+              <div className='imgHolder'>
+                <img className='mini ui right floated image' src={`${assetPrefix}/static/images/staff/lauren_mcdermott.png`} />
+              </div>
             </div>
             <Icon name='dropdown' />
             Lauren D. McDermott <br />
@@ -248,10 +251,16 @@ class AccordionRight extends Component {
                padding: 10px 10px 10px 10px;
                text-align: left;
               }
-              
-              .panel {
 
-              }`}
+              .acc-panel {
+                height: 9vh;
+                padding-top: 1vh;
+                
+              }
+              .imgHolder {
+                max-height: 4vh;
+              }
+             `}
           </style>
         </div>
       );

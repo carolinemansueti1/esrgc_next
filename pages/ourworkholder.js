@@ -1,6 +1,6 @@
 import Layout from '../components/Layout';
 import getWork from '../data/ourwork.js';
-import { Button } from 'semantic-ui-react';
+import { Button, Image } from 'semantic-ui-react';
 
 const assetPrefix = process.env.ASSET_PREFIX;
 

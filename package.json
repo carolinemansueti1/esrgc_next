@@ -23,7 +23,9 @@
     "react-bootstrap": "^1.0.0-beta.10",
     "react-copy-to-clipboard": "^5.0.1",
     "react-dom": "16.8.6",
+    "react-facebook": "^8.0.4",
     "react-next-paging": "^7.0.7",
+    "react-twitter-embed": "^2.0.8",
     "reactstrap": "^8.0.1",
     "semantic-ui-css": "^2.4.1",
     "semantic-ui-react": "^0.84.0"
