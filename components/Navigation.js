@@ -1,5 +1,5 @@
-import Link from 'next/link';
 import React from 'react';
+import Link from 'next/link';
 
 const assetPrefix = process.env.ASSET_PREFIX;
 
@@ -66,10 +66,6 @@ const Navigation = () => {
                      color:gray; 
                      text-decoration:none; 
                      cursor:pointer;  
-                }
-                
-                #right a::after {
-                    background-color: yellow;
                 }
             `}
         </style>
