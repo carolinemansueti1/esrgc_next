@@ -46,6 +46,10 @@ const data = (props) => {
                     {
                         `.padding {
                             margin-left: 5vw;
+                        }
+
+                        .ui.five.wide.column {
+                            padding-bottom: 5vh;
                         }`
                     }
                 </style>

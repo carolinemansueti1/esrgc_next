@@ -1,13 +1,16 @@
 import Link from 'next/link';
 import { Card, Image } from 'semantic-ui-react'; 
+import { Popup } from 'semantic-ui-react';
+import '../styles/card.less';
+
+const assetPrefix = process.env.ASSET_PREFIX;
 
 export default (props) => {
-    
-    const assetPrefix = process.env.ASSET_PREFIX;
-    
     return (
-            <Link href={{ pathname: '/projectholder', query: { id: props.id } }} as={`${assetPrefix}/projectholder`}>
-                <div className="ui fluid card" key={props.title}>
+        <div>
+            <Link href={`${props.url}`} as={`${props.url}`}>
+                <a>
+                <Popup trigger={<div className="ui card" key={props.title} position='top center' inverted>
                     <Card.Content>
                     <Image size="large"
                         src={`${assetPrefix}/static/images/${props.image}`}
@@ -19,14 +22,18 @@ export default (props) => {
                         {props.title}
                         </h3>
                     </Card.Content>
-
-                    <style jsx>{`
-                    .ui.fluid.card {
-                        cursor: pointer;
-                    }`}</style>
-                </div>
+                </div>}>
+                    {props.description}
+                </Popup>
+                </a>
             </Link>
- 
+
+            <style jsx>
+                {`.ui.content{
+                    max-height: 20vh;
+                }`}
+            </style>
+        </div>
     )
 }
 

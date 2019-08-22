@@ -2,8 +2,9 @@ const prod = process.env.NODE_ENV === 'production';
 const assetPrefix = prod ? '/esrgc-newsite' : '';
 const webpack = require('webpack');
 const withCSS = require('@zeit/next-css');
+const withLess = require('@zeit/next-less');
 
-module.exports = withCSS({
+module.exports = withLess(withCSS({
   assetPrefix: assetPrefix,
   target: 'serverless',
   webpack (config) {
@@ -26,4 +27,4 @@ module.exports = withCSS({
     )
     return config
   }
-})
+}))

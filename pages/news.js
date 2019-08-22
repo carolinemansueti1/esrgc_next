@@ -1,13 +1,13 @@
 import Layout from '../components/Layout';
-import Footer from '../components/Footer';
-import React, { Component} from 'react';
+import React from 'react';
 import { FacebookProvider, Feed } from 'react-facebook';
-import { TwitterTimelineEmbed, TwitterShareButton, TwitterFollowButton, TwitterHashtagButton, TwitterMentionButton, TwitterTweetEmbed, TwitterMomentShare, TwitterDMButton, TwitterVideoEmbed, TwitterOnAirButton } from 'react-twitter-embed';
+import { TwitterTimelineEmbed } from 'react-twitter-embed';
 import { Card } from 'semantic-ui-react';
  
 
 const news = () => (
     <Layout>
+        <div id="fb-root"></div>
         <div className="ui center aligned basic very padded segment">
             <div className='spaced'>
                 <div className='ui center aligned very padded basic segment'>
@@ -26,8 +26,9 @@ const news = () => (
                                 sourceType="profile"
                                 screenName="esrgc"
                                 theme="dark"
-                                options={{height: 400}}
+                                options={{height: 500}}
                                 />
+                                
                         </div>
 
                         <div className='ui column'>
@@ -35,6 +36,7 @@ const news = () => (
                                 <h2>ESRGC Blog</h2>
                             </div>
                         </div>
+
                     </div>
                 </div>
             </div>
@@ -43,7 +45,6 @@ const news = () => (
         <style jsx>
             {`
             .spaced {
-                height: 40vh;
                 text-align: center;
             }`}
         </style>

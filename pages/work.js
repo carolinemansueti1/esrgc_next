@@ -2,8 +2,6 @@ import React from 'react';
 import Layout from '../components/Layout';
 import ProjectHolder from '../components/ProjectHolder';
 import getProjects from '../data/projects.js';
-import { get } from 'http';
-
 
 const Work = (props) => {
     return (
@@ -11,7 +9,7 @@ const Work = (props) => {
             <div className='padding'>
 
             <div className='ui center aligned basic very padded segment'>
-                <div className='ui center aligned basic very padded segment'>
+                <div className='ui center aligned basic segment'>
                     <h1>Examples of Our Work</h1>
                 </div>
 
@@ -30,6 +28,10 @@ const Work = (props) => {
                     {
                         `.padding {
                             margin-left: 5vw;
+                        }
+
+                        .ui.five.wide.column {
+                            padding-bottom: 5vh;
                         }`
                     }
                 </style>

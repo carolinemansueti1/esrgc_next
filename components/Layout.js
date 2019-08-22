@@ -28,20 +28,17 @@ const Layout = ( props ) => {
             <body>
                 <MenuA />
                     {props.children}
-            
+                <Footer />
             </body>
             
             <style jsx>
-                {` body {
-                    margin-top: 16vh;
-                    overflow: visible;
-                }
+                {` 
+                    body {
+                        margin-top: 16vh;
+                        overflow: visible;
+                    }
                     a {
                         text-decoration: none;
-                    }
-
-                    body.h1 {
-                        color: red;
                     }
                 `}
             </style>

@@ -91,6 +91,9 @@ const Home = () => (
     
     <style jsx>
       {`
+         .ui.fluid.card{
+             cursor: pointer;
+         }
      
         #banner img {
             margin-top: 1vh;

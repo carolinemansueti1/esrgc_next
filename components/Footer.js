@@ -10,7 +10,7 @@ const msrc = `${assetPrefix}/static/images/msrc.png`;
 
 const footer = () => (
     <div className='bottom'>
-     <Segment inverted vertical>
+     <Segment inverted vertical color='grey'>
       <Container textAlign='center'>
         <Grid divided inverted stackable>
          
@@ -75,6 +75,7 @@ const footer = () => (
             <i className="copyright outline icon" />Copyright ESRGC 2019
           </List.Item>
         </List>
+        
       </Container>
     </Segment>
 
@@ -82,6 +83,7 @@ const footer = () => (
       {`
       .bottom {
         margin-top: 7vh;
+        margin-bottom: 0vh;
       }
       .differentcolor {
         color: black;
