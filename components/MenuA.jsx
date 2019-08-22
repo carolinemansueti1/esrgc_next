@@ -39,7 +39,11 @@ const MenuA = () => (
 
 
                     <Nav.Item>
-                        <Link href="/work"as={`${assetPrefix}/work`}><a className="nav-link" id='padded'>Our Work</a></Link>
+                        <Link href="/work"as={`${assetPrefix}/work`}><a className="nav-link" id='padded'>Work</a></Link>
+                    </Nav.Item>
+
+                    <Nav.Item>
+                        <Link href="/ourwork"as={`${assetPrefix}/work`}><a className="nav-link" id='padded'>Our Work</a></Link>
                     </Nav.Item>
 
                     <Nav.Item>

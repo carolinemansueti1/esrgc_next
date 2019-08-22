@@ -1,6 +1,7 @@
 import Layout from '../components/Layout';
 import getWork from '../data/ourwork.js';
 import { Button, Image } from 'semantic-ui-react';
+import Link from 'next/link';
 
 const assetPrefix = process.env.ASSET_PREFIX;
 
@@ -31,7 +32,11 @@ const OurWorkHolder = (props) => {
                         <div className='ui center aligned basic very padded segment'>
                             <ul>
                                 {props.project.link.map(onelink => (
-                                    <li><Button><a href={onelink.url}>{onelink.title}</a></Button></li>
+                                    <li>
+                                        <Link href={onelink.url}>
+                                          <a>{onelink.title}</a>
+                                        </Link>
+                                    </li>
                                 ))}
                             </ul>
                         </div>
